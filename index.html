@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Italiana&family=Work+Sans:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -35,7 +35,10 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="nav-inner">
-    <a href="#top" class="wordmark">LAURA LANA</a>
+    <div class="nav-brand">
+      <span class="yarn-mark yarn-mark--right nav-yarn"><svg><use href="#yarnball"></use></svg></span>
+      <a href="#top" class="wordmark">LAURA LANA</a>
+    </div>
     <nav class="nav-links" id="navLinks">
       <a href="#collection" class="i18n" data-zh="作品" data-en="Works"></a>
       <a href="#craft" class="i18n" data-zh="工艺" data-en="Craft"></a>
@@ -53,6 +56,7 @@
       </button>
     </div>
   </div>
+  <div class="nav-thread"></div>
 </header>
 
 <!-- ============ HERO ============ -->
@@ -97,29 +101,32 @@
 <section class="material" id="material">
   <div class="section-inner">
     <p class="eyebrow i18n" data-zh="材质故事" data-en="The Material"></p>
-    <h2 class="section-title i18n" data-zh="为什么是马海毛" data-en="Why Mohair"></h2>
+    <div class="title-row">
+      <span class="yarn-mark yarn-mark--right"><svg><use href="#yarnball"></use></svg></span>
+      <h2 class="section-title i18n" data-zh="为什么是马海毛" data-en="Why Mohair"></h2>
+    </div>
     <p class="section-lede i18n"
       data-zh="马海毛取自安哥拉山羊，纤维中空、光泽天然，是世界上最轻盈保暖的动物纤维之一。我们的纱线精选自意大利几家历史悠久的马海毛纺线商——那里以远超寻常的色彩丰富度著称，也是 LAURA LANA 每件作品色彩格外浓郁的原因。"
       data-en="Mohair comes from the Angora goat — a hollow, lustrous fibre and one of the warmest, lightest animal fibres in the world. Every skein is chosen from a handful of historic Italian mohair spinners renowned for a depth of colour rarely found elsewhere — the reason LAURA LANA pieces read so vividly."></p>
 
     <div class="feature-grid">
       <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" class="ic-stroke"/><path d="M14 24c2-6 6-10 12-10M24 34c6 0 10-4 12-10" class="ic-stroke"/></svg>
+        <span class="yarn-mark yarn-mark--right feature-yarn"><svg><use href="#yarnball"></use></svg></span>
         <h3 class="i18n" data-zh="天然光泽" data-en="Natural Halo & Luster"></h3>
         <p class="i18n" data-zh="马海毛纤维表面光滑，能反射光线，织物自带丝绸般的光泽与蓬松晕光。" data-en="Mohair's smooth fibre surface reflects light, giving every knit a silken sheen and soft halo."></p>
       </div>
       <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><path d="M24 8 C14 8 8 16 8 24 C8 34 16 40 24 40 C32 40 40 34 40 24 C40 16 34 8 24 8Z" class="ic-stroke"/><path d="M24 16v16M17 24h14" class="ic-stroke"/></svg>
+        <span class="yarn-mark yarn-mark--right feature-yarn"><svg><use href="#yarnball"></use></svg></span>
         <h3 class="i18n" data-zh="轻盈保暖" data-en="Lightweight Warmth"></h3>
         <p class="i18n" data-zh="纤维中空结构锁住空气，同等重量下保暖度远超羊毛，穿着轻盈不厚重。" data-en="A hollow fibre core traps air, giving far more warmth per gram than ordinary wool — cosy without the bulk."></p>
       </div>
       <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><circle cx="16" cy="18" r="5" class="ic-stroke"/><circle cx="32" cy="16" r="5" class="ic-stroke"/><circle cx="24" cy="32" r="5" class="ic-stroke"/></svg>
+        <span class="yarn-mark yarn-mark--right feature-yarn"><svg><use href="#yarnball"></use></svg></span>
         <h3 class="i18n" data-zh="缤纷色谱" data-en="A Colour Story"></h3>
         <p class="i18n" data-zh="每一色都来自意大利纱线商的调色房，饱和、浓郁，是奢侈针织品里少见的大胆用色。" data-en="Every shade comes straight from the dye house — saturated and rich in a way rarely seen in luxury knitwear."></p>
       </div>
       <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><path d="M24 6l6 12 13 2-9.5 9 2.5 13-12-6.5L12 42l2.5-13L5 20l13-2 6-12Z" class="ic-stroke"/></svg>
+        <span class="yarn-mark yarn-mark--right feature-yarn"><svg><use href="#yarnball"></use></svg></span>
         <h3 class="i18n" data-zh="慢工细作" data-en="Slow-Made, Not Mass-Made"></h3>
         <p class="i18n" data-zh="每件独一无二，由设计师本人定制编织，拒绝流水线生产，值得等待。" data-en="Each piece is singular, hand-knit to commission by the designer herself — never on a production line, always worth the wait."></p>
       </div>
@@ -135,7 +142,10 @@
 <section class="collection" id="collection">
   <div class="section-inner">
     <p class="eyebrow i18n" data-zh="作品" data-en="The Works"></p>
-    <h2 class="section-title i18n" data-zh="每一件，独一无二" data-en="Each Piece, One of One"></h2>
+    <div class="title-row">
+      <span class="yarn-mark yarn-mark--right"><svg><use href="#yarnball"></use></svg></span>
+      <h2 class="section-title i18n" data-zh="每一件，独一无二" data-en="Each Piece, One of One"></h2>
+    </div>
     <p class="section-lede i18n"
       data-zh="以下是工作室部分作品的展示，图片持续更新中。每一件都是限定唯一的定制之作——完成后不会复织第二件。若某一色彩或廓形打动了您，欢迎与工作室联系，定制专属您的一件。"
       data-en="A selection from the studio — photography is being added as each piece is finished. Every piece shown here is made once, to commission, and never repeated. If a colour or silhouette speaks to you, get in touch to commission your own."></p>
@@ -255,6 +265,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>

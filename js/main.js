@@ -85,7 +85,10 @@ function renderProducts(){
       </div>
       <div class="product-body">
         <span class="product-cat i18n" data-zh="${p.catZh}" data-en="${p.catEn}"></span>
-        <h3 class="i18n" data-zh="${p.zh}" data-en="${p.en}"></h3>
+        <h3 class="product-name">
+          <span class="yarn-mark yarn-mark--right title-yarn"><svg><use href="#yarnball"></use></svg></span>
+          <span class="i18n" data-zh="${p.zh}" data-en="${p.en}"></span>
+        </h3>
         <p class="i18n" data-zh="${p.descZh}" data-en="${p.descEn}"></p>
         <div class="product-foot">
           <a class="product-link i18n" data-zh="咨询定制" data-en="Enquire to Commission"
