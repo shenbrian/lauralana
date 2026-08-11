@@ -15,6 +15,23 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="yarnball" viewBox="0 0 220 220">
+      <circle cx="110" cy="90" r="42" fill="none" stroke="#DDD6C6" stroke-width="1"/>
+      <g transform="translate(110,90)">
+        <g transform="rotate(0)"><path d="M 0,-38 C 24,-38 38,-16 30,6 C 24,22 6,26 -6,18" fill="none" stroke="#B5232F" stroke-width="2" stroke-linecap="round"/></g>
+        <g transform="rotate(60)"><path d="M 0,-38 C 24,-38 38,-16 30,6 C 24,22 6,26 -6,18" fill="none" stroke="#1F4E9C" stroke-width="2" stroke-linecap="round"/></g>
+        <g transform="rotate(120)"><path d="M 0,-38 C 24,-38 38,-16 30,6 C 24,22 6,26 -6,18" fill="none" stroke="#D98A1F" stroke-width="2" stroke-linecap="round"/></g>
+        <g transform="rotate(180)"><path d="M 0,-38 C 24,-38 38,-16 30,6 C 24,22 6,26 -6,18" fill="none" stroke="#146B4F" stroke-width="2" stroke-linecap="round"/></g>
+        <g transform="rotate(240)"><path d="M 0,-38 C 24,-38 38,-16 30,6 C 24,22 6,26 -6,18" fill="none" stroke="#5B3A87" stroke-width="2" stroke-linecap="round"/></g>
+      </g>
+      <path d="M 110,52 C 134,52 148,72 141,93 C 134,109 117,113 105,105 C 96,99 98,89 107,87 C 116,85 122,93 116,102 C 110,110 116,121 110,130 C 104,138 110,148 104,157 C 98,165 102,177 96,188"
+        fill="none" stroke="#A62368" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
 <!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="nav-inner">
@@ -110,6 +127,10 @@
   </div>
 </section>
 
+<div class="section-divider">
+  <span class="yarn-mark yarn-mark--down"><svg><use href="#yarnball"></use></svg></span>
+</div>
+
 <!-- ============ COLLECTION ============ -->
 <section class="collection" id="collection">
   <div class="section-inner">
@@ -126,7 +147,10 @@
 <!-- ============ CRAFT / PROCESS ============ -->
 <section class="craft" id="craft">
   <div class="section-inner">
-    <p class="eyebrow i18n" data-zh="制作工艺" data-en="The Craft"></p>
+    <div class="eyebrow-row">
+      <span class="yarn-mark yarn-mark--right"><svg><use href="#yarnball"></use></svg></span>
+      <p class="eyebrow i18n" data-zh="制作工艺" data-en="The Craft"></p>
+    </div>
     <h2 class="section-title i18n" data-zh="从一根纱线到一件作品" data-en="From a Single Strand to a Finished Piece"></h2>
 
     <div class="process">
@@ -175,6 +199,7 @@
         </svg>
         <span class="frame-caption i18n" data-zh="工作室实景 · 拍摄中" data-en="Studio portrait · Photography in progress"></span>
       </div>
+      <span class="yarn-mark yarn-mark--left"><svg><use href="#yarnball"></use></svg></span>
     </div>
   </div>
 </section>
@@ -222,7 +247,10 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <span class="wordmark footer-wordmark">LAURA LANA</span>
+    <div class="footer-mark-row">
+      <span class="yarn-mark yarn-mark--up"><svg><use href="#yarnball"></use></svg></span>
+      <span class="wordmark footer-wordmark">LAURA LANA</span>
+    </div>
     <p class="i18n" data-zh="© 2026 LAURA LANA · 手织马海毛女装 · 澳洲" data-en="© 2026 LAURA LANA · Hand-Knit Mohair Womenswear · Australia"></p>
   </div>
 </footer>
