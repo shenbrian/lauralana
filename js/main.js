@@ -149,29 +149,7 @@ function initMobileNav(){
 }
 
 /* -----------------------------------------------------------
-   4) THREAD SCROLL INDICATOR
------------------------------------------------------------- */
-function initThreadRail(){
-  const path = document.getElementById('threadPath');
-  const needle = document.getElementById('threadNeedle');
-  if(!path || !needle) return;
-  const length = path.getTotalLength();
-
-  function update(){
-    const doc = document.documentElement;
-    const scrollable = doc.scrollHeight - doc.clientHeight;
-    const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
-    const point = path.getPointAtLength(progress * length);
-    needle.style.top = (progress * (window.innerHeight - 20) + 10) + 'px';
-    needle.style.left = point.x + 'px';
-  }
-  update();
-  window.addEventListener('scroll', update, { passive:true });
-  window.addEventListener('resize', update);
-}
-
-/* -----------------------------------------------------------
-   5) CONTACT FORM -> mailto fallback
+   4) CONTACT FORM -> mailto fallback
 ------------------------------------------------------------ */
 function initContactForm(){
   const form = document.getElementById('contactForm');
@@ -192,6 +170,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   initLanguage();
   initMobileNav();
-  initThreadRail();
   initContactForm();
 });

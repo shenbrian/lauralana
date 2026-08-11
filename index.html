@@ -15,14 +15,6 @@
 </head>
 <body>
 
-<!-- 装饰性缝线滚动指示条 / Decorative thread scroll indicator -->
-<div class="thread-rail" aria-hidden="true">
-  <svg class="thread-svg" viewBox="0 0 40 1000" preserveAspectRatio="none">
-    <path id="threadPath" d="M20,0 C40,80 0,160 20,240 C40,320 0,400 20,480 C40,560 0,640 20,720 C40,800 0,880 20,960 L20,1000" />
-  </svg>
-  <div class="thread-needle" id="threadNeedle"></div>
-</div>
-
 <!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="nav-inner">
@@ -66,18 +58,15 @@
       </div>
     </div>
     <div class="hero-visual">
-      <svg class="garment-line" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path class="garment-path" d="M140 70 C140 45 165 25 210 25 C255 25 280 45 280 70 L280 100 L340 120 L365 210 L320 225 L305 165 L305 480 L115 480 L115 165 L100 225 L55 210 L80 120 L140 100 Z" />
-        <path class="garment-path garment-path--collar" d="M175 45 C185 65 235 65 245 45" />
-        <path class="stitch-row" d="M120 190 L300 190" />
-        <path class="stitch-row" d="M120 260 L300 260" />
-        <path class="stitch-row" d="M120 330 L300 330" />
-        <path class="stitch-row" d="M120 400 L300 400" />
-      </svg>
-      <span class="visual-caption i18n" data-zh="工作室手绘 · LAURA LANA 廓形速写" data-en="Studio sketch · LAURA LANA silhouette"></span>
+      <div class="lookbook-frame">
+        <svg class="frame-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 10c0-3.5 3.6-6 12-6s12 2.5 12 6v4l9 3 4 14-7 2-2-9v34H16V30l-2 9-7-2 4-14 9-3v-4Z"
+            stroke="var(--ink)" stroke-width="1.1" fill="none" stroke-linejoin="round"/>
+        </svg>
+        <span class="frame-caption i18n" data-zh="本季造型图 · 拍摄中" data-en="Season lookbook · Photography in progress"></span>
+      </div>
     </div>
   </div>
-  <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <!-- ============ MATERIAL / WHY MOHAIR ============ -->
@@ -171,14 +160,14 @@
         data-zh="工作室位于澳洲，也因此与本地马海毛牧场保持着长期而直接的合作。我们没有工厂、没有流水线，只有一双手、一台织机和许多个安静的编织夜晚。"
         data-en="The studio is based in Australia, working directly with local mohair farms. There is no factory, no assembly line — just a pair of hands, a set of needles, and many quiet evenings of knitting."></p>
     </div>
-    <div class="about-visual" aria-hidden="true">
-      <svg viewBox="0 0 300 300" class="skein">
-        <circle cx="150" cy="150" r="95" class="skein-ring"/>
-        <circle cx="150" cy="150" r="75" class="skein-ring"/>
-        <circle cx="150" cy="150" r="55" class="skein-ring"/>
-        <path d="M150 55 C 90 90, 90 210, 150 245 C 210 210, 210 90, 150 55 Z" class="skein-cross"/>
-        <path d="M75 150 C 110 90, 190 90, 225 150 C 190 210, 110 210, 75 150 Z" class="skein-cross"/>
-      </svg>
+    <div class="about-visual">
+      <div class="lookbook-frame">
+        <svg class="frame-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="19" stroke="var(--ink)" stroke-width="1.1" fill="none"/>
+          <circle cx="32" cy="32" r="11" stroke="var(--ink)" stroke-width="1.1" fill="none"/>
+        </svg>
+        <span class="frame-caption i18n" data-zh="工作室实景 · 拍摄中" data-en="Studio portrait · Photography in progress"></span>
+      </div>
     </div>
   </div>
 </section>
