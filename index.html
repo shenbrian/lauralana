@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAURA LANA — 手织马海毛女装 | Hand-Knit Mohair Womenswear</title>
+<meta name="description" content="LAURA LANA — 原创设计，作者手工编织的马海毛女装毛衣与毛裙。源自澳洲马海毛，一线一意，慢工细作。Original hand-knit mohair sweaters and dresses, designed and made by hand in Australia.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- 装饰性缝线滚动指示条 / Decorative thread scroll indicator -->
+<div class="thread-rail" aria-hidden="true">
+  <svg class="thread-svg" viewBox="0 0 40 1000" preserveAspectRatio="none">
+    <path id="threadPath" d="M20,0 C40,80 0,160 20,240 C40,320 0,400 20,480 C40,560 0,640 20,720 C40,800 0,880 20,960 L20,1000" />
+  </svg>
+  <div class="thread-needle" id="threadNeedle"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="wordmark">
+      <span class="wordmark-main">LAURA</span><span class="wordmark-sub">LANA</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#collection" class="i18n" data-zh="作品集" data-en="Collection"></a>
+      <a href="#craft" class="i18n" data-zh="工艺" data-en="Craft"></a>
+      <a href="#about" class="i18n" data-zh="关于" data-en="About"></a>
+      <a href="#contact" class="i18n" data-zh="联系" data-en="Contact"></a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt" data-lang-btn="zh">中文</span>
+        <span class="lang-div">/</span>
+        <span class="lang-opt" data-lang-btn="en">EN</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow i18n" data-zh="原创设计 · 手工编织 · 澳洲马海毛" data-en="Original Design · Hand-Knit · Australian Mohair"></p>
+      <h1 class="hero-title">
+        <span class="i18n" data-zh="手织" data-en="Hand-Knit"></span><br>
+        <em class="i18n" data-zh="马海毛" data-en="Mohair"></em>
+      </h1>
+      <p class="hero-sub i18n"
+        data-zh="每一件毛衣与毛裙，皆由一根纱线、一双手，历经数周编织而成——没有第二件完全相同的作品。"
+        data-en="Every sweater and dress begins as a single strand of yarn, worked by hand over weeks — no two pieces are ever quite alike."></p>
+      <div class="hero-cta">
+        <a href="#collection" class="btn btn-primary i18n" data-zh="查看作品集" data-en="View the Collection"></a>
+        <a href="#craft" class="btn btn-ghost i18n" data-zh="了解工艺" data-en="Discover the Craft"></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="garment-line" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="garment-path" d="M140 70 C140 45 165 25 210 25 C255 25 280 45 280 70 L280 100 L340 120 L365 210 L320 225 L305 165 L305 480 L115 480 L115 165 L100 225 L55 210 L80 120 L140 100 Z" />
+        <path class="garment-path garment-path--collar" d="M175 45 C185 65 235 65 245 45" />
+        <path class="stitch-row" d="M120 190 L300 190" />
+        <path class="stitch-row" d="M120 260 L300 260" />
+        <path class="stitch-row" d="M120 330 L300 330" />
+        <path class="stitch-row" d="M120 400 L300 400" />
+      </svg>
+      <span class="visual-caption i18n" data-zh="工作室手绘 · LAURA LANA 廓形速写" data-en="Studio sketch · LAURA LANA silhouette"></span>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ MATERIAL / WHY MOHAIR ============ -->
+<section class="material" id="material">
+  <div class="section-inner">
+    <p class="eyebrow i18n" data-zh="材质故事" data-en="The Material"></p>
+    <h2 class="section-title i18n" data-zh="为什么是马海毛" data-en="Why Mohair"></h2>
+    <p class="section-lede i18n"
+      data-zh="马海毛取自安哥拉山羊，纤维中空、光泽天然，是世界上最轻盈保暖的动物纤维之一。我们坚持使用南半球、澳洲牧场出产的马海毛原毛，从源头保证每一缕纱线的品质。"
+      data-en="Mohair comes from the Angora goat — a hollow, lustrous fibre and one of the warmest, lightest animal fibres in the world. We source raw mohair exclusively from pastures in the Southern Hemisphere, here in Australia, so every skein starts from a fibre we trust."></p>
+
+    <div class="feature-grid">
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" class="ic-stroke"/><path d="M14 24c2-6 6-10 12-10M24 34c6 0 10-4 12-10" class="ic-stroke"/></svg>
+        <h3 class="i18n" data-zh="天然光泽" data-en="Natural Halo & Luster"></h3>
+        <p class="i18n" data-zh="马海毛纤维表面光滑，能反射光线，织物自带丝绸般的光泽与蓬松晕光。" data-en="Mohair's smooth fibre surface reflects light, giving every knit a silken sheen and soft halo."></p>
+      </div>
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><path d="M24 8 C14 8 8 16 8 24 C8 34 16 40 24 40 C32 40 40 34 40 24 C40 16 34 8 24 8Z" class="ic-stroke"/><path d="M24 16v16M17 24h14" class="ic-stroke"/></svg>
+        <h3 class="i18n" data-zh="轻盈保暖" data-en="Lightweight Warmth"></h3>
+        <p class="i18n" data-zh="纤维中空结构锁住空气，同等重量下保暖度远超羊毛，穿着轻盈不厚重。" data-en="A hollow fibre core traps air, giving far more warmth per gram than ordinary wool — cosy without the bulk."></p>
+      </div>
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><path d="M12 34c0-10 4-20 12-24 8 4 12 14 12 24" class="ic-stroke"/><path d="M18 34h12M20 40h8" class="ic-stroke"/></svg>
+        <h3 class="i18n" data-zh="南半球血统" data-en="Southern Hemisphere Provenance"></h3>
+        <p class="i18n" data-zh="原毛来自澳洲本地牧场安哥拉山羊，路径短、可追溯，减少运输与中间环节。" data-en="Raised on local Australian pastures, our fibre travels a short, traceable path from farm to atelier."></p>
+      </div>
+      <div class="feature">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none"><path d="M24 6l6 12 13 2-9.5 9 2.5 13-12-6.5L12 42l2.5-13L5 20l13-2 6-12Z" class="ic-stroke"/></svg>
+        <h3 class="i18n" data-zh="慢工细作" data-en="Slow-Made, Not Mass-Made"></h3>
+        <p class="i18n" data-zh="小批量、限量编织，拒绝流水线生产，每件作品都值得等待。" data-en="Made in small, limited runs — never on a production line. Every piece is worth the wait."></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLECTION ============ -->
+<section class="collection" id="collection">
+  <div class="section-inner">
+    <p class="eyebrow i18n" data-zh="作品集" data-en="The Collection"></p>
+    <h2 class="section-title i18n" data-zh="本季之作" data-en="This Season's Pieces"></h2>
+    <p class="section-lede i18n"
+      data-zh="以下为部分作品展示，图片持续更新中。每件均为原创设计、手工编织，如需查看实物细节或预定，欢迎点击询价。"
+      data-en="A selection from the studio — photography is being added as each piece is finished. All designs are original and hand-knit; tap Enquire for details or to reserve a piece."></p>
+
+    <div class="product-grid" id="productGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============ CRAFT / PROCESS ============ -->
+<section class="craft" id="craft">
+  <div class="section-inner">
+    <p class="eyebrow i18n" data-zh="制作工艺" data-en="The Craft"></p>
+    <h2 class="section-title i18n" data-zh="从一根纱线到一件作品" data-en="From a Single Strand to a Finished Piece"></h2>
+
+    <div class="process">
+      <div class="process-step">
+        <span class="process-num">01</span>
+        <h3 class="i18n" data-zh="选毛" data-en="Sourcing"></h3>
+        <p class="i18n" data-zh="从澳洲牧场精选头等马海毛原毛，按光泽与手感分级筛选。" data-en="Prime-grade raw mohair is hand-selected from Australian farms for lustre and handle."></p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">02</span>
+        <h3 class="i18n" data-zh="纺纱" data-en="Spinning"></h3>
+        <p class="i18n" data-zh="原毛经清洗、梳理后纺成纱线，保留纤维天然的蓬松与光泽。" data-en="Cleaned and carded fibre is spun into yarn, keeping its natural loft and shine intact."></p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">03</span>
+        <h3 class="i18n" data-zh="手工编织" data-en="Hand-Knitting"></h3>
+        <p class="i18n" data-zh="设计师逐针手织，一件毛衣通常需要2–4周才能完成。" data-en="Each garment is worked stitch by stitch by hand — a sweater typically takes two to four weeks."></p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">04</span>
+        <h3 class="i18n" data-zh="定型与缝合" data-en="Finishing"></h3>
+        <p class="i18n" data-zh="手工缝合、蒸汽定型，最后逐件检验后方可出品。" data-en="Hand-finished, steam-blocked, and inspected piece by piece before it ever leaves the studio."></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-inner about-inner">
+    <div class="about-text">
+      <p class="eyebrow i18n" data-zh="关于 LAURA LANA" data-en="About LAURA LANA"></p>
+      <h2 class="section-title i18n" data-zh="一间小小的编织工作室" data-en="A Small Knitting Studio"></h2>
+      <p class="i18n"
+        data-zh="LAURA LANA 是一个专注于马海毛手工编织的独立设计品牌。“Lana”在意大利语与西班牙语中意为“羊毛”——这也是我们全部工作的起点。我们相信衣物应当被珍视而非消耗：每一件作品都由设计师亲手绘制版型、亲手编织，不追随快时尚的节奏，只为把一根纱线的温度，织进真正会被穿很多年的衣服里。"
+        data-en="LAURA LANA is an independent studio devoted to hand-knit mohair. “Lana” — Italian and Spanish for wool — is where everything we do begins. We believe clothing should be treasured, not consumed: every piece is pattern-drafted and hand-knit by the designer herself, at a pace that has nothing to do with fast fashion, so the warmth of a single strand of yarn ends up in something worth wearing for years."></p>
+      <p class="i18n"
+        data-zh="工作室位于澳洲，也因此与本地马海毛牧场保持着长期而直接的合作。我们没有工厂、没有流水线，只有一双手、一台织机和许多个安静的编织夜晚。"
+        data-en="The studio is based in Australia, working directly with local mohair farms. There is no factory, no assembly line — just a pair of hands, a set of needles, and many quiet evenings of knitting."></p>
+    </div>
+    <div class="about-visual" aria-hidden="true">
+      <svg viewBox="0 0 300 300" class="skein">
+        <circle cx="150" cy="150" r="95" class="skein-ring"/>
+        <circle cx="150" cy="150" r="75" class="skein-ring"/>
+        <circle cx="150" cy="150" r="55" class="skein-ring"/>
+        <path d="M150 55 C 90 90, 90 210, 150 245 C 210 210, 210 90, 150 55 Z" class="skein-cross"/>
+        <path d="M75 150 C 110 90, 190 90, 225 150 C 190 210, 110 210, 75 150 Z" class="skein-cross"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-inner contact-inner">
+    <div class="contact-info">
+      <p class="eyebrow i18n" data-zh="询价与定制" data-en="Enquiries & Bespoke Orders"></p>
+      <h2 class="section-title i18n" data-zh="与工作室聊聊" data-en="Talk to the Studio"></h2>
+      <p class="i18n"
+        data-zh="想了解某件作品的细节、尺码，或希望定制专属配色与尺寸？填写右侧表单，或直接通过以下方式联系我们，我们通常在1–2个工作日内回复。"
+        data-en="Want details or sizing on a piece, or a bespoke colour and fit? Fill in the form, or reach us directly below — we usually reply within one to two business days."></p>
+
+      <ul class="contact-list">
+        <li><span class="contact-label i18n" data-zh="邮箱" data-en="Email"></span><a href="mailto:hello@lauralana.au">hello@lauralana.au</a></li>
+        <li><span class="contact-label i18n" data-zh="Instagram" data-en="Instagram"></span><a href="https://instagram.com/lauralana.au" target="_blank" rel="noopener">@lauralana.au</a></li>
+        <li><span class="contact-label i18n" data-zh="微信" data-en="WeChat"></span><span>LauraLana_Studio</span></li>
+        <li><span class="contact-label i18n" data-zh="网站" data-en="Website"></span><span>www.lauralana.au</span></li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <label>
+        <span class="i18n" data-zh="姓名" data-en="Name"></span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span class="i18n" data-zh="邮箱 / 微信" data-en="Email / WeChat"></span>
+        <input type="text" name="reach" required>
+      </label>
+      <label>
+        <span class="i18n" data-zh="感兴趣的作品（选填）" data-en="Piece you're interested in (optional)"></span>
+        <input type="text" name="item" placeholder="例：暮色毛裙 / e.g. Dusk Dress">
+      </label>
+      <label>
+        <span class="i18n" data-zh="留言" data-en="Message"></span>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary i18n" data-zh="发送询价" data-en="Send Enquiry"></button>
+      <p class="form-note i18n" data-zh="提交后将通过您的邮件客户端发送给我们。" data-en="Submitting will open your email client to send this to us."></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="wordmark footer-wordmark"><span class="wordmark-main">LAURA</span><span class="wordmark-sub">LANA</span></span>
+    <p class="i18n" data-zh="© 2026 LAURA LANA · 手织马海毛女装 · 澳洲" data-en="© 2026 LAURA LANA · Hand-Knit Mohair Womenswear · Australia"></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
