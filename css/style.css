@@ -426,31 +426,33 @@ html[data-lang="zh"] .contact-form label{ letter-spacing:.03em; text-transform:n
 .yarn-mark--downright{ transform: rotate(45deg); }
 .yarn-mark--downleft{ transform: rotate(-45deg); }
 
-.craft .eyebrow-row{ display:flex; align-items:center; gap:12px; margin-bottom:22px; }
-.craft .yarn-mark{ width:22px; height:22px; }
+.craft .eyebrow-row{ display:flex; align-items:center; gap:10px; margin-bottom:22px; }
+.craft .yarn-mark{ width:29px; height:29px; }
 .craft .eyebrow{ margin-bottom:0; }
 
 .about-visual .yarn-mark{ width:34px; height:34px; margin-top:24px; }
 
-.footer-inner .yarn-mark{ width:24px; height:24px; opacity:.85; }
+.footer-inner .yarn-mark{ width:39px; height:39px; opacity:.85; }
 .footer-mark-row{ display:flex; align-items:center; gap:10px; }
 
 /* Nav: yarn ball + full-width thread line replacing the border */
-.nav-brand{ display:flex; align-items:center; gap:10px; }
-.nav-yarn{ width:28px; height:28px; }
+.nav-brand{ display:flex; align-items:center; gap:8px; }
+.nav-yarn{ width:55px; height:55px; }
 .nav-thread{ height:2px; background:#A62368; }
 
-/* Section title rows: yarn ball beside an H2, sized to the heading */
-.title-row{ display:flex; align-items:center; gap:16px; margin-bottom:26px; }
+/* Section title rows: yarn ball beside an H2, sized so the visible
+   swirl (≈38% of the icon's box, the rest is space for the thread
+   tail) matches the heading's actual cap height */
+.title-row{ display:flex; align-items:center; gap:6px; margin-bottom:26px; }
 .title-row .section-title{ margin-bottom:0; }
-.title-row .yarn-mark{ width:42px; height:42px; }
+.title-row .yarn-mark{ width:120px; height:120px; margin-right:-24px; }
 
 /* Material feature icons -> yarn balls */
-.feature-yarn{ width:32px; height:32px; margin-bottom:18px; }
+.feature-yarn{ width:42px; height:42px; margin-bottom:12px; margin-left:-13px; }
 
 /* Product card title mark */
-.product-name{ display:flex; align-items:center; gap:9px; }
-.title-yarn{ width:24px; height:24px; }
+.product-name{ display:flex; align-items:center; gap:0px; }
+.title-yarn{ width:47px; height:47px; margin-right:-12px; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
   outline: 1px solid var(--ink);
   outline-offset: 3px;
