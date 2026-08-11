@@ -457,9 +457,9 @@ html[data-lang="zh"] .contact-form label{ letter-spacing:.03em; text-transform:n
 /* Section title rows: yarn ball beside an H2, sized so the visible
    swirl (≈38% of the icon's box, the rest is space for the thread
    tail) matches the heading's actual cap height */
-.title-row{ display:flex; align-items:flex-start; gap:14px; margin-bottom:26px; }
-.title-row .section-title{ margin-bottom:0; max-width: 26ch; }
-.title-row .yarn-mark{ width:120px; height:120px; margin:-38px -38px 0 -38px; }
+.title-row{ display:flex; align-items:center; gap:14px; margin-bottom:26px; }
+.title-row .section-title{ margin-bottom:0; max-width: 40ch; }
+.title-row .yarn-mark{ width:120px; height:120px; margin: 0 -18px 0 -46px; }
 
 /* Material feature icons -> yarn balls */
 .feature-yarn{ width:42px; height:42px; margin-bottom:6px; margin-left:-25px; }
