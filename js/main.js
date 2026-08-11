@@ -16,57 +16,51 @@
 ------------------------------------------------------------ */
 const PRODUCTS = [
   {
-    zh: "暮色毛裙", en: "Dusk Knit Dress",
+    zh: "樱桃毛裙", en: "Cherry Knit Dress",
     catZh: "连衣裙 · 马海毛混纺", catEn: "Dress · Mohair Blend",
-    descZh: "落肩廓形，裙摆自然垂坠，暮色紫灰渐染。",
-    descEn: "Dropped shoulders and a soft, fluid hem in a dusk-grey mauve.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "限量", tagEn: "Limited",
+    descZh: "落肩廓形，高饱和樱桃红——意大利纱线特有的浓郁色彩。",
+    descEn: "Dropped shoulders in a saturated cherry red, straight from the Italian dye house.",
+    swatch: "#B5232F",
     img: ""
   },
   {
-    zh: "云绒圆领衫", en: "Cloud Crewneck",
+    zh: "钴蓝圆领衫", en: "Cobalt Crewneck",
     catZh: "毛衣 · 100% 马海毛", catEn: "Sweater · 100% Mohair",
-    descZh: "蓬松晕光质地，米白本色，四季可叠穿。",
-    descEn: "A soft, hazy halo in undyed cream — layers easily through the seasons.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "新品", tagEn: "New",
+    descZh: "蓬松晕光质地，深邃钴蓝，四季可叠穿。",
+    descEn: "A soft, hazy halo in a deep cobalt blue — layers easily through the seasons.",
+    swatch: "#1F4E9C",
     img: ""
   },
   {
-    zh: "低语高领", en: "Whisper Turtleneck",
+    zh: "祖母绿高领衫", en: "Emerald Turtleneck",
     catZh: "毛衣 · 马海毛混纺", catEn: "Sweater · Mohair Blend",
-    descZh: "修身高领设计，藕粉色手工染色纱线。",
-    descEn: "A fitted turtleneck in a hand-dyed dusty-rose yarn.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "", tagEn: "",
+    descZh: "修身高领设计，浓郁祖母绿手工染色纱线。",
+    descEn: "A fitted turtleneck in a rich, hand-dyed emerald yarn.",
+    swatch: "#146B4F",
     img: ""
   },
   {
-    zh: "苔痕开衫", en: "Moss Cardigan",
+    zh: "藏红花开衫", en: "Saffron Cardigan",
     catZh: "开衫 · 马海毛混纺", catEn: "Cardigan · Mohair Blend",
-    descZh: "植物染苔绿色，肌理如林间苔藓，手工盘扣。",
-    descEn: "Botanically dyed moss green with a lichen-like texture and hand-tied buttons.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "手工染色", tagEn: "Hand-Dyed",
+    descZh: "藏红花黄，肌理蓬松温暖，手工盘扣。",
+    descEn: "A warm, luminous saffron yellow with hand-tied buttons.",
+    swatch: "#D98A1F",
     img: ""
   },
   {
-    zh: "初雪连衣裙", en: "First Snow Dress",
+    zh: "洋红连衣裙", en: "Fuchsia Dress",
     catZh: "连衣裙 · 马海毛混纺", catEn: "Dress · Mohair Blend",
-    descZh: "及踝长度，雪白本色，可根据身高定制裙长。",
-    descEn: "Ankle-length in undyed white — hem length can be made to order.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "可定制", tagEn: "Made to Order",
+    descZh: "及踝长度，浓烈洋红，裙长可根据身高定制。",
+    descEn: "Ankle-length in a bold fuchsia — hem length can be made to order.",
+    swatch: "#A62368",
     img: ""
   },
   {
-    zh: "深栗背心", en: "Chestnut Vest",
+    zh: "紫罗兰背心", en: "Violet Vest",
     catZh: "背心 · 马海毛混纺", catEn: "Vest · Mohair Blend",
-    descZh: "深栗色，无袖廓形，适合叠穿于衬衫或连衣裙外。",
-    descEn: "A deep chestnut sleeveless layer, made to sit over a shirt or dress.",
-    priceZh: "询价", priceEn: "Enquire",
-    tagZh: "", tagEn: "",
+    descZh: "深紫罗兰色，无袖廓形，适合叠穿于衬衫或连衣裙外。",
+    descEn: "A deep violet sleeveless layer, made to sit over a shirt or dress.",
+    swatch: "#5B3A87",
     img: ""
   }
 ];
@@ -81,20 +75,20 @@ function renderProducts(){
   const grid = document.getElementById('productGrid');
   grid.innerHTML = PRODUCTS.map(p => `
     <article class="product-card">
-      <div class="product-media" style="color: var(--fleece-dim)">
-        ${p.tagZh ? `<span class="product-tag i18n" data-zh="${p.tagZh}" data-en="${p.tagEn}"></span>` : ''}
+      <div class="product-media">
+        <span class="product-tag i18n" data-zh="独一无二" data-en="One of One"></span>
         ${p.img
           ? `<img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy">`
           : `${placeholderIcon}<span class="placeholder-tag i18n" data-zh="样品图片待补充" data-en="Photo coming soon"></span>`
         }
+        <span class="colour-bar" style="background:${p.swatch}" title="${p.swatch}"></span>
       </div>
       <div class="product-body">
         <span class="product-cat i18n" data-zh="${p.catZh}" data-en="${p.catEn}"></span>
         <h3 class="i18n" data-zh="${p.zh}" data-en="${p.en}"></h3>
         <p class="i18n" data-zh="${p.descZh}" data-en="${p.descEn}"></p>
         <div class="product-foot">
-          <span class="product-price i18n" data-zh="${p.priceZh}" data-en="${p.priceEn}"></span>
-          <a class="product-link i18n" data-zh="询价" data-en="Enquire"
+          <a class="product-link i18n" data-zh="咨询定制" data-en="Enquire to Commission"
              href="#contact" data-item-zh="${p.zh}" data-item-en="${p.en}"></a>
         </div>
       </div>
