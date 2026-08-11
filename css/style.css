@@ -246,6 +246,11 @@ html[data-lang="zh"] .colour-ribbon-label{ letter-spacing:.03em; text-transform:
   color: var(--ink-faint);
 }
 html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-transform:none; }
+.lookbook-frame img{
+  width:100%; height:100%;
+  object-fit: cover;
+  display:block;
+}
 
 /* ===========================================================
    Material / features
