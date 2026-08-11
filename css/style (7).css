@@ -426,37 +426,31 @@ html[data-lang="zh"] .contact-form label{ letter-spacing:.03em; text-transform:n
 .yarn-mark--downright{ transform: rotate(45deg); }
 .yarn-mark--downleft{ transform: rotate(-45deg); }
 
-.section-divider{
-  display:flex; justify-content:center;
-  padding: 14px 0;
-}
-.section-divider .yarn-mark{ width:72px; height:72px; }
-
-.craft .eyebrow-row{ display:flex; align-items:center; gap:14px; margin-bottom:22px; }
-.craft .yarn-mark{ width:46px; height:46px; }
+.craft .eyebrow-row{ display:flex; align-items:center; gap:10px; margin-bottom:22px; }
+.craft .yarn-mark{ width:14px; height:14px; }
 .craft .eyebrow{ margin-bottom:0; }
 
-.about-visual .yarn-mark{ width:54px; height:54px; margin-top:24px; }
+.about-visual .yarn-mark{ width:18px; height:18px; margin-top:24px; }
 
-.footer-inner .yarn-mark{ width:34px; height:34px; opacity:.85; }
-.footer-mark-row{ display:flex; align-items:center; gap:12px; }
+.footer-inner .yarn-mark{ width:16px; height:16px; opacity:.85; }
+.footer-mark-row{ display:flex; align-items:center; gap:10px; }
 
 /* Nav: yarn ball + full-width thread line replacing the border */
-.nav-brand{ display:flex; align-items:center; gap:12px; }
-.nav-yarn{ width:30px; height:30px; }
+.nav-brand{ display:flex; align-items:center; gap:10px; }
+.nav-yarn{ width:22px; height:22px; }
 .nav-thread{ height:2px; background:#A62368; }
 
-/* Section title rows: yarn ball beside an H2 */
-.title-row{ display:flex; align-items:center; gap:18px; margin-bottom:26px; }
+/* Section title rows: yarn ball beside an H2, sized to the heading */
+.title-row{ display:flex; align-items:center; gap:14px; margin-bottom:26px; }
 .title-row .section-title{ margin-bottom:0; }
-.title-row .yarn-mark{ width:44px; height:44px; margin-top:4px; }
+.title-row .yarn-mark{ width:38px; height:38px; }
 
-/* Material feature icons -> yarn balls */
-.feature-yarn{ width:48px; height:48px; margin-bottom:20px; }
+/* Material feature icons -> yarn balls, sized to the h3 beside them */
+.feature-yarn{ width:18px; height:18px; margin-bottom:16px; }
 
-/* Product card title mark */
-.product-name{ display:flex; align-items:center; gap:10px; }
-.title-yarn{ width:22px; height:22px; }
+/* Product card title mark, sized to the product name */
+.product-name{ display:flex; align-items:center; gap:8px; }
+.title-yarn{ width:18px; height:18px; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
   outline: 1px solid var(--ink);
   outline-offset: 3px;
