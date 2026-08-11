@@ -125,9 +125,14 @@ html[data-lang="zh"] .btn{ letter-spacing:.06em; text-transform:none; font-size:
   display:flex; align-items:center; justify-content:space-between;
   gap: 24px;
 }
-.wordmark{ display:flex; flex-direction:column; line-height:1; text-transform: uppercase; }
-.wordmark-main{ font-family: var(--font-wordmark); font-size:21px; letter-spacing:.16em; font-weight:400; }
-.wordmark-sub{ font-family: var(--font-body-en); font-size:9px; letter-spacing:.5em; color: var(--ink-faint); margin-top:5px;}
+.wordmark{
+  display:block;
+  font-family: var(--font-wordmark);
+  font-size:21px;
+  letter-spacing:.16em;
+  font-weight:400;
+  text-transform: uppercase;
+}
 
 .nav-links{ display:flex; gap:40px; font-size: 12.5px; text-transform:uppercase; letter-spacing:.1em; }
 html[data-lang="zh"] .nav-links{ text-transform:none; letter-spacing:.04em; font-size:14px; }
@@ -409,7 +414,7 @@ html[data-lang="zh"] .contact-form label{ letter-spacing:.03em; text-transform:n
   display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;
 }
 .footer p{ font-size:12.5px; margin:0; color: var(--ink-faint); }
-.footer-wordmark .wordmark-main{ font-size:15px; }
+.footer-wordmark{ font-size:15px; }
 
 /* Focus visibility for a11y */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
