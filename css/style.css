@@ -18,6 +18,7 @@
 
   --font-display-en: 'Fraunces', serif;
   --font-display-zh: 'Noto Serif SC', serif;
+  --font-wordmark: 'Italiana', serif;
   --font-body-en: 'Work Sans', sans-serif;
   --font-body-zh: 'Noto Sans SC', sans-serif;
 
@@ -124,9 +125,9 @@ html[data-lang="zh"] .btn{ letter-spacing:.06em; text-transform:none; font-size:
   display:flex; align-items:center; justify-content:space-between;
   gap: 24px;
 }
-.wordmark{ display:flex; flex-direction:column; line-height:1; }
-.wordmark-main{ font-family: var(--font-display-en); font-size:19px; letter-spacing:.14em; font-weight:400; }
-.wordmark-sub{ font-family: var(--font-body-en); font-size:9px; letter-spacing:.5em; color: var(--ink-faint); margin-top:4px;}
+.wordmark{ display:flex; flex-direction:column; line-height:1; text-transform: uppercase; }
+.wordmark-main{ font-family: var(--font-wordmark); font-size:21px; letter-spacing:.16em; font-weight:400; }
+.wordmark-sub{ font-family: var(--font-body-en); font-size:9px; letter-spacing:.5em; color: var(--ink-faint); margin-top:5px;}
 
 .nav-links{ display:flex; gap:40px; font-size: 12.5px; text-transform:uppercase; letter-spacing:.1em; }
 html[data-lang="zh"] .nav-links{ text-transform:none; letter-spacing:.04em; font-size:14px; }

@@ -130,7 +130,7 @@ function applyLanguage(lang){
 
 function initLanguage(){
   const saved = localStorage.getItem('ll-lang');
-  const lang = saved || 'zh';
+  const lang = saved || 'en';
   applyLanguage(lang);
   document.getElementById('langToggle').addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-lang');
