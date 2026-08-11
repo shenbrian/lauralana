@@ -260,6 +260,7 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 34px;
+  align-items: start;
 }
 @media (max-width: 980px){ .product-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 620px){ .product-grid{ grid-template-columns: 1fr; } }
@@ -443,16 +444,16 @@ html[data-lang="zh"] .contact-form label{ letter-spacing:.03em; text-transform:n
 /* Section title rows: yarn ball beside an H2, sized so the visible
    swirl (≈38% of the icon's box, the rest is space for the thread
    tail) matches the heading's actual cap height */
-.title-row{ display:flex; align-items:center; gap:6px; margin-bottom:26px; }
-.title-row .section-title{ margin-bottom:0; }
-.title-row .yarn-mark{ width:120px; height:120px; margin-right:-24px; }
+.title-row{ display:flex; align-items:flex-start; gap:14px; margin-bottom:26px; }
+.title-row .section-title{ margin-bottom:0; max-width: 26ch; }
+.title-row .yarn-mark{ width:120px; height:120px; margin:-38px -38px 0 -38px; }
 
 /* Material feature icons -> yarn balls */
-.feature-yarn{ width:42px; height:42px; margin-bottom:12px; margin-left:-13px; }
+.feature-yarn{ width:42px; height:42px; margin-bottom:6px; margin-left:-25px; }
 
 /* Product card title mark */
-.product-name{ display:flex; align-items:center; gap:0px; }
-.title-yarn{ width:47px; height:47px; margin-right:-12px; }
+.product-name{ display:flex; align-items:center; gap:6px; }
+.title-yarn{ width:47px; height:47px; margin:0 -6px 0 -18px; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
   outline: 1px solid var(--ink);
   outline-offset: 3px;
