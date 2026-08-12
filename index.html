@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Italiana&family=Work+Sans:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=16">
+<link rel="stylesheet" href="css/style.css?v=17">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -61,35 +61,49 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <p class="eyebrow i18n" data-zh="原创设计 · 澳洲手工编织 · 意大利马海毛纱线" data-en="Original Design · Hand-Knit in Australia · Italian Mohair Yarn"></p>
-      <h1 class="hero-title">
-        <span class="i18n" data-zh="手织" data-en="Hand-Knit"></span><br>
-        <em class="i18n" data-zh="马海毛" data-en="Mohair"></em>
-      </h1>
-      <p class="hero-sub i18n"
-        data-zh="每一件毛衣与毛裙，皆由一根纱线、一双手，历经数周编织而成——没有第二件完全相同的作品。"
-        data-en="Every sweater and dress begins as a single strand of yarn, worked by hand over weeks — no two pieces are ever quite alike."></p>
-      <div class="hero-cta">
-        <a href="#collection" class="btn btn-primary i18n" data-zh="查看作品" data-en="View the Works"></a>
-        <a href="#craft" class="btn btn-ghost i18n" data-zh="了解工艺" data-en="Discover the Craft"></a>
-      </div>
-      <div class="colour-ribbon" aria-hidden="true">
-        <span class="colour-chip" style="background:#B5232F"></span>
-        <span class="colour-chip" style="background:#1F4E9C"></span>
-        <span class="colour-chip" style="background:#146B4F"></span>
-        <span class="colour-chip" style="background:#D98A1F"></span>
-        <span class="colour-chip" style="background:#A62368"></span>
-        <span class="colour-chip" style="background:#5B3A87"></span>
-        <span class="colour-ribbon-label i18n" data-zh="色彩故事 · 源自意大利马海毛纱线" data-en="A colour story · from Italy's mohair mills"></span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="lookbook-frame">
-        <img src="images/hero-rack-detail.jpg" alt="A row of hand-knit mohair sweaters in vivid colour, on hangers">
+  <div class="hero-diptych">
+
+    <div class="hero-panel hero-panel--main">
+      <img src="images/hero-rack-detail.jpg" alt="A row of hand-knit mohair sweaters in vivid colour, on hangers">
+      <div class="hero-scrim"></div>
+      <div class="hero-overlay">
+        <p class="eyebrow eyebrow--on-photo i18n" data-zh="原创设计 · 澳洲手工编织 · 意大利马海毛纱线" data-en="Original Design · Hand-Knit in Australia · Italian Mohair Yarn"></p>
+        <h1 class="hero-title hero-title--on-photo">
+          <span class="i18n" data-zh="手织" data-en="Hand-Knit"></span><br>
+          <em class="i18n" data-zh="马海毛" data-en="Mohair"></em>
+        </h1>
+        <p class="hero-sub hero-sub--on-photo i18n"
+          data-zh="每一件毛衣与毛裙，皆由一根纱线、一双手，历经数周编织而成——没有第二件完全相同的作品。"
+          data-en="Every sweater and dress begins as a single strand of yarn, worked by hand over weeks — no two pieces are ever quite alike."></p>
+        <div class="hero-cta">
+          <a href="#collection" class="btn btn-on-photo i18n" data-zh="查看作品" data-en="View the Works"></a>
+          <a href="#craft" class="btn btn-ghost btn-ghost--on-photo i18n" data-zh="了解工艺" data-en="Discover the Craft"></a>
+        </div>
+        <div class="hero-lockup">
+          <span class="yarn-mark yarn-mark--right"><svg><use href="#yarnball"></use></svg></span>
+          <span class="hero-lockup-word">LAURA LANA</span>
+        </div>
       </div>
     </div>
+
+    <div class="hero-panel hero-panel--side">
+      <img src="images/studio-rack-wide.jpg" alt="A rack of finished LAURA LANA mohair sweaters in the studio">
+      <div class="hero-scrim hero-scrim--side"></div>
+      <p class="hero-quote i18n"
+        data-zh="真实的纱线，真实的双手，真实的美。"
+        data-en="Real yarn. Real hands. Real beauty."></p>
+    </div>
+
+  </div>
+
+  <div class="colour-ribbon colour-ribbon--below" aria-hidden="true">
+    <span class="colour-chip" style="background:#B5232F"></span>
+    <span class="colour-chip" style="background:#1F4E9C"></span>
+    <span class="colour-chip" style="background:#146B4F"></span>
+    <span class="colour-chip" style="background:#D98A1F"></span>
+    <span class="colour-chip" style="background:#A62368"></span>
+    <span class="colour-chip" style="background:#5B3A87"></span>
+    <span class="colour-ribbon-label i18n" data-zh="色彩故事 · 源自意大利马海毛纱线" data-en="A colour story · from Italy's mohair mills"></span>
   </div>
 </section>
 
@@ -262,6 +276,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=16"></script>
+<script src="js/main.js?v=17"></script>
 </body>
 </html>

@@ -171,23 +171,43 @@ html[data-lang="zh"] .nav-links{ text-transform:none; letter-spacing:.04em; font
 /* ===========================================================
    Hero — photography-led, minimal text, generous margins
 =========================================================== */
-.hero-inner{
+.hero-diptych{
   display:grid;
-  grid-template-columns: minmax(340px, 38%) 1fr;
-  align-items: stretch;
+  grid-template-columns: 1fr .42fr;
   min-height: 94vh;
 }
-.hero-text{
-  padding: 110px var(--edge) 80px 0;
-  margin-left: var(--edge);
+.hero-panel{
+  position:relative;
+  overflow:hidden;
+}
+.hero-panel img{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
+.hero-scrim{
+  position:absolute; inset:0;
+  background: linear-gradient(90deg, rgba(10,8,6,.62) 0%, rgba(10,8,6,.38) 32%, rgba(10,8,6,0) 62%);
+}
+.hero-scrim--side{
+  background: linear-gradient(0deg, rgba(10,8,6,.55) 0%, rgba(10,8,6,.05) 45%);
+}
+.hero-overlay{
+  position:relative;
+  z-index:2;
+  height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
+  padding: 60px var(--edge);
+  max-width: 620px;
 }
 @media (max-width: 900px){
-  .hero-inner{ grid-template-columns:1fr; min-height:auto; }
-  .hero-text{ margin-left:0; padding: 56px var(--edge) 48px; order:2; }
-  .hero-visual{ order:1; aspect-ratio: 4/5; }
+  .hero-diptych{ grid-template-columns:1fr; min-height:auto; }
+  .hero-panel--main{ min-height:78vh; }
+  .hero-panel--side{ height:32vh; }
+  .hero-overlay{ max-width:none; padding: 40px var(--edge); }
 }
 
 .hero-title{
@@ -199,6 +219,10 @@ html[data-lang="zh"] .nav-links{ text-transform:none; letter-spacing:.04em; font
 .hero-title em{ font-style: italic; color: var(--ink); font-weight: 400; }
 html[data-lang="zh"] .hero-title em{ font-style:normal; }
 
+.eyebrow--on-photo{ color: rgba(247,244,238,.8); }
+.hero-title--on-photo, .hero-title--on-photo em{ color: #F7F4EE; }
+.hero-sub--on-photo{ color: rgba(247,244,238,.88); }
+
 .hero-sub{
   max-width: 42ch;
   font-size: 16.5px;
@@ -206,7 +230,53 @@ html[data-lang="zh"] .hero-title em{ font-style:normal; }
 }
 .hero-cta{ display:flex; gap:16px; flex-wrap:wrap; }
 
-.colour-ribbon{ display:flex; align-items:center; gap:10px; margin-top:46px; flex-wrap:wrap; }
+.btn-on-photo{
+  display:inline-block;
+  padding: 15px 32px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  background: #F7F4EE;
+  color: var(--ink);
+  border: 1px solid #F7F4EE;
+  transition: background .35s ease, color .35s ease;
+}
+html[data-lang="zh"] .btn-on-photo{ letter-spacing:.06em; text-transform:none; font-size:13px; }
+.btn-on-photo:hover{ background: transparent; color:#F7F4EE; }
+.btn-ghost--on-photo{
+  border-color: rgba(247,244,238,.7);
+  color: #F7F4EE;
+}
+.btn-ghost--on-photo:hover{ background:#F7F4EE; color:var(--ink); }
+
+.hero-lockup{
+  display:flex; align-items:center; gap:10px;
+  margin-top:56px;
+}
+.hero-lockup .yarn-mark{ width:34px; height:34px; }
+.hero-lockup-word{
+  font-family: var(--font-wordmark);
+  font-size:16px; letter-spacing:.16em;
+  color: rgba(247,244,238,.85);
+  text-transform: uppercase;
+}
+
+.hero-quote{
+  position:absolute; z-index:2;
+  left:28px; bottom:32px; right:28px;
+  color:#F7F4EE;
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height:1.3;
+}
+html[data-lang="zh"] .hero-quote{ font-style:normal; }
+
+.colour-ribbon{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.colour-ribbon--below{
+  justify-content:center;
+  padding: 26px var(--edge);
+}
 .colour-chip{
   width:22px; height:22px; border-radius:50%;
   border: 1px solid rgba(23,20,15,.08);
@@ -230,15 +300,6 @@ html[data-lang="zh"] .colour-ribbon-label{ letter-spacing:.03em; text-transform:
   display:flex; align-items:center; justify-content:center;
   flex-direction: column;
   gap: 18px;
-}
-.hero-visual .lookbook-frame{
-  position: absolute;
-  inset: 0;
-  aspect-ratio: auto;
-  border: none;
-}
-@media (max-width: 900px){
-  .hero-visual .lookbook-frame{ position:relative; inset:auto; height:100%; border:1px solid var(--line); }
 }
 .lookbook-frame .frame-icon{ width:44px; height:44px; opacity:.3; }
 .lookbook-frame .frame-caption{
