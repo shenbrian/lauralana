@@ -10,10 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Italiana&family=Work+Sans:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=17">
+<link rel="stylesheet" href="css/style.css?v=20">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+
+<div id="checkoutBanner" class="checkout-banner" hidden>
+  <span class="i18n" data-zh="" data-en=""></span>
+  <button type="button" class="checkout-banner-close" aria-label="Close">&times;</button>
+</div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -160,7 +165,7 @@
         data-en="A selection from the studio — photography is being added as each piece is finished. Every piece shown here is made once, to commission, and never repeated. If a colour or silhouette speaks to you, get in touch to commission your own."></p>
     </div>
 
-    <div class="product-grid" id="productGrid"><!-- populated by JS --></div>
+    <div class="ledger" id="productLedger"><!-- populated by JS --></div>
   </div>
 </section>
 
@@ -276,6 +281,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=17"></script>
+<script src="js/main.js?v=20"></script>
 </body>
 </html>
