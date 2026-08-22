@@ -49,6 +49,18 @@ function formatNo(n){
   return 'N° ' + String(n).padStart(3, '0');
 }
 
+function flowerMark(hex, size = 52) {
+  const petals = [0, 72, 144, 216, 288].map(angle =>
+    `<ellipse cx="26" cy="14" rx="6" ry="11"
+      transform="rotate(${angle} 26 26)"
+      fill="none" stroke="${hex}" stroke-width="1.3"/>`
+  ).join('');
+  return `<svg class="ledger-flower" width="${size}" height="${size}"
+    viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+    ${petals}<circle cx="26" cy="26" r="3" fill="${hex}"/>
+  </svg>`;
+}
+
 async function loadAndRenderProducts(){
   try {
     const res = await fetch('data/products.json', { cache: 'no-store' });
@@ -73,21 +85,15 @@ function renderLedger(){
     return;
   }
 
+  PRODUCTS.sort((a, b) => a.no - b.no);
+
   ledger.innerHTML = PRODUCTS.map(p => {
     const hasPrice = typeof p.priceAUD === 'number' && p.priceAUD > 0;
-    const images = p.images || {};
+    const flower = flowerMark(p.swatch || '#DDD6C6');
 
-    const hangerBlock = images.hanger
-      ? `<div class="ledger-photo"><img src="${images.hanger}" alt="${p.zh} / ${p.en}" loading="lazy"></div>`
-      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="正面照待补充" data-en="Front photo coming soon"></span></div>`;
-
-    const flatBlock = images.flat
-      ? `<div class="ledger-photo"><img src="${images.flat}" alt="${p.zh} / ${p.en}" loading="lazy"></div>`
-      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="平摊照待补充" data-en="Flat-lay coming soon"></span></div>`;
-
-    const textureBlock = images.texture
-      ? `<div class="ledger-texture"><img src="${images.texture}" alt="" loading="lazy"></div>`
-      : `<div class="ledger-texture">${placeholderIcon}<span class="ledger-texture-label i18n" data-zh="纹理特写待补充" data-en="Texture detail coming soon"></span></div>`;
+    const photoBlock = p.img
+      ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy">${flower}</div>`
+      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="照片待补充" data-en="Photo coming soon"></span>${flower}</div>`;
 
     const actionBlock = p.sold
       ? `<span class="ledger-archived i18n" data-zh="已被珍藏" data-en="Now with its owner"></span>`
@@ -105,17 +111,7 @@ function renderLedger(){
       </div>
       <div class="ledger-body">
         <div class="ledger-visual">
-          <div class="ledger-diptych">
-            ${hangerBlock}
-            ${flatBlock}
-          </div>
-          <div class="ledger-specimen">
-            ${textureBlock}
-            <div class="ledger-swatch">
-              <span class="ledger-swatch-chip" style="background:${p.swatch || '#DDD6C6'}"></span>
-              <span class="ledger-swatch-label i18n" data-zh="${p.colourNameZh || ''}" data-en="${p.colourNameEn || ''}"></span>
-            </div>
-          </div>
+          ${photoBlock}
         </div>
         <div class="ledger-info">
           <span class="ledger-cat i18n" data-zh="${p.catZh}" data-en="${p.catEn}"></span>

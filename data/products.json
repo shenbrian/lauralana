@@ -1,109 +1,134 @@
 [
   {
-    "id": "emerald-crewneck",
+    "id": "fuchsia-crewneck",
     "no": 1,
-    "zh": "祖母绿圆领衫", "en": "Emerald Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，罗纹下摆与袖口，蓬松晕光质地，浓郁祖母绿——意大利纱线特有的饱和色彩。",
-    "descEn": "A dropped-shoulder silhouette with ribbed cuffs and hem, in a soft, hazy halo of saturated emerald straight from the Italian dye house.",
-    "colourNameZh": "祖母绿", "colourNameEn": "Emerald",
-    "swatch": "#297865",
+    "zh": "桃红圆领衫",
+    "en": "Fuchsia Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，浓烈鲜明的桃红色。",
+    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of vivid, saturated fuchsia.",
+    "colourNameZh": "桃红",
+    "colourNameEn": "Fuchsia",
+    "swatch": "#A4224A",
     "images": {
-      "hanger": "images/emerald-crewneck-hanger.jpg",
-      "flat": "images/emerald-crewneck-flat.jpg",
-      "texture": "images/emerald-crewneck-texture.jpg"
+      "hanger": "images/fuchsia-crewneck-hanger.jpg"
     },
-    "priceAUD": 60000,
-    "sold": false
+    "priceAUD": 49000,
+    "sold": false,
+    "img": "images/fuchsia-crewneck-hanger.jpg"
   },
   {
-    "id": "teal-crewneck",
+    "id": "olive-crewneck",
     "no": 2,
-    "zh": "青蓝圆领衫", "en": "Teal Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，沉静通透的深青蓝色。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of deep, glassy teal.",
-    "colourNameZh": "青蓝", "colourNameEn": "Teal",
-    "swatch": "#5A93A3",
+    "zh": "橄榄绿圆领衫",
+    "en": "Olive Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，浓郁沉静的橄榄绿。",
+    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of deep, quiet olive green.",
+    "colourNameZh": "橄榄绿",
+    "colourNameEn": "Olive",
+    "swatch": "#8B843B",
     "images": {
-      "hanger": "images/teal-crewneck-hanger.jpg",
-      "flat": "images/teal-crewneck-flat.jpg"
+      "hanger": "images/olive-crewneck-hanger.jpg",
+      "flat": "images/olive-crewneck-flat.jpg"
     },
-    "priceAUD": 62000,
-    "sold": false
+    "priceAUD": 42000,
+    "sold": false,
+    "img": "images/olive-crewneck-hanger.jpg"
   },
   {
     "id": "indigo-marl-crewneck",
     "no": 3,
-    "zh": "靛蓝混色圆领衫", "en": "Indigo Marl Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "靛蓝混色圆领衫",
+    "en": "Indigo Marl Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，青蓝、藏蓝与紫罗兰交缠成雾面段染，纱线本身的斑驳色彩。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, hand-knit in a hazy marl of teal, indigo and violet — the yarn's own mottled colourwork.",
-    "colourNameZh": "靛蓝混色", "colourNameEn": "Indigo Marl",
+    "colourNameZh": "靛蓝混色",
+    "colourNameEn": "Indigo Marl",
     "swatch": "#537394",
     "images": {
       "hanger": "images/indigo-marl-crewneck-hanger.jpg",
       "flat": "images/indigo-marl-crewneck-flat.jpg",
       "texture": "images/indigo-marl-crewneck-texture.jpg"
     },
-    "priceAUD": 64000,
-    "sold": false
+    "priceAUD": 38000,
+    "sold": false,
+    "img": "images/indigo-marl-crewneck-hanger.jpg"
   },
   {
     "id": "cornflower-crewneck",
     "no": 4,
-    "zh": "牛仔蓝圆领衫", "en": "Cornflower Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "牛仔蓝圆领衫",
+    "en": "Cornflower Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，轻盈罗纹质地，明快的牛仔蓝色。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a light, airy rib knit of bright cornflower blue.",
-    "colourNameZh": "牛仔蓝", "colourNameEn": "Cornflower",
+    "colourNameZh": "牛仔蓝",
+    "colourNameEn": "Cornflower",
     "swatch": "#5C749A",
     "images": {
       "hanger": "images/cornflower-crewneck-hanger.jpg"
     },
-    "priceAUD": 58000,
-    "sold": false
+    "priceAUD": 68000,
+    "sold": false,
+    "img": "images/cornflower-crewneck-hanger.jpg"
   },
   {
     "id": "cornflower-cable-skirt",
     "no": 5,
-    "zh": "牛仔蓝麻花长裙", "en": "Cornflower Cable Skirt",
-    "catZh": "半裙 · 马海毛混纺", "catEn": "Skirt · Mohair Blend",
+    "zh": "牛仔蓝麻花长裙",
+    "en": "Cornflower Cable Skirt",
+    "catZh": "半裙 · 马海毛混纺",
+    "catEn": "Skirt · Mohair Blend",
     "descZh": "及踝A字长裙，通身粗麻花绞纹，与牛仔蓝圆领衫同色系，可单穿亦可叠穿成套。",
     "descEn": "An ankle-length A-line skirt in bold rope cables throughout, in the same cornflower blue as the matching crewneck — wear alone or layered together.",
-    "colourNameZh": "牛仔蓝", "colourNameEn": "Cornflower",
+    "colourNameZh": "牛仔蓝",
+    "colourNameEn": "Cornflower",
     "swatch": "#5C739A",
     "images": {
       "hanger": "images/cornflower-cable-skirt-hanger.jpg",
       "texture": "images/cornflower-cable-skirt-texture.jpg"
     },
-    "priceAUD": 78000,
-    "sold": false
+    "priceAUD": 68000,
+    "sold": false,
+    "img": "images/cornflower-cable-skirt-hanger.jpg"
   },
   {
     "id": "dusty-mauve-crewneck",
     "no": 6,
-    "zh": "雾霾玫瑰圆领衫", "en": "Dusty Mauve Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "雾霾玫瑰圆领衫",
+    "en": "Dusty Mauve Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，玫瑰粉与灰调交融的雾霾玫瑰色段染。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of dusty mauve — rose pink heathered through with grey.",
-    "colourNameZh": "雾霾玫瑰", "colourNameEn": "Dusty Mauve",
+    "colourNameZh": "雾霾玫瑰",
+    "colourNameEn": "Dusty Mauve",
     "swatch": "#A36274",
     "images": {
       "hanger": "images/dusty-mauve-crewneck-hanger.jpg",
       "flat": "images/dusty-mauve-crewneck-flat.jpg"
     },
-    "priceAUD": 75000,
-    "sold": false
+    "priceAUD": 78000,
+    "sold": false,
+    "img": "images/dusty-mauve-crewneck-hanger.jpg"
   },
   {
     "id": "lavender-crewneck",
     "no": 7,
-    "zh": "薰衣草紫圆领衫", "en": "Lavender Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "薰衣草紫圆领衫",
+    "en": "Lavender Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，薰衣草紫与浅灰白斑驳交织的雾面段染质地。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, hand-knit in a hazy lavender marl flecked through with pale grey-white.",
-    "colourNameZh": "薰衣草紫", "colourNameEn": "Lavender",
+    "colourNameZh": "薰衣草紫",
+    "colourNameEn": "Lavender",
     "swatch": "#8C82A3",
     "images": {
       "hanger": "images/lavender-crewneck-hanger.jpg",
@@ -111,163 +136,206 @@
       "texture": "images/lavender-crewneck-texture.jpg"
     },
     "priceAUD": 79000,
-    "sold": false
+    "sold": false,
+    "img": "images/lavender-crewneck-hanger.jpg"
   },
   {
     "id": "lilac-crewneck",
     "no": 8,
-    "zh": "浅丁香紫圆领衫", "en": "Lilac Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "浅丁香紫圆领衫",
+    "en": "Lilac Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，柔和均匀的浅丁香紫色。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of pale, even lilac.",
-    "colourNameZh": "浅丁香紫", "colourNameEn": "Pale Lilac",
+    "colourNameZh": "浅丁香紫",
+    "colourNameEn": "Pale Lilac",
     "swatch": "#C29AB4",
     "images": {
       "hanger": "images/lilac-crewneck-hanger.jpg",
       "flat": "images/lilac-crewneck-flat.jpg"
     },
-    "priceAUD": 73000,
-    "sold": false
+    "priceAUD": 36000,
+    "sold": false,
+    "img": "images/lilac-crewneck-hanger.jpg"
   },
   {
     "id": "grey-lavender-batwing",
     "no": 9,
-    "zh": "灰紫蝙蝠袖上衣", "en": "Grey Lavender Batwing Top",
-    "catZh": "上衣 · 马海毛混纺", "catEn": "Top · Mohair Blend",
+    "zh": "灰紫蝙蝠袖上衣",
+    "en": "Grey Lavender Batwing Top",
+    "catZh": "上衣 · 马海毛混纺",
+    "catEn": "Top · Mohair Blend",
     "descZh": "方正宽松的蝙蝠袖廓形，七分袖，罗纹下摆与袖口，柔雾的灰紫色。",
     "descEn": "A boxy, dolman-sleeved silhouette cropped to the elbow, with ribbed cuffs and hem, in a soft, smoky grey-lavender.",
-    "colourNameZh": "灰紫", "colourNameEn": "Grey Lavender",
+    "colourNameZh": "灰紫",
+    "colourNameEn": "Grey Lavender",
     "swatch": "#BBB3C3",
     "images": {
       "hanger": "images/grey-lavender-batwing-hanger.jpg"
     },
-    "priceAUD": 67000,
-    "sold": false
+    "priceAUD": 28000,
+    "sold": false,
+    "img": "images/grey-lavender-batwing-hanger.jpg"
   },
   {
     "id": "oat-lace-crewneck",
     "no": 10,
-    "zh": "燕麦色镂空圆领衫", "en": "Oat Lace Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "燕麦色镂空圆领衫",
+    "en": "Oat Lace Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，通身菱形镂空针法，温暖的燕麦香槟色。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, knit throughout in an open diamond lace stitch, in a warm, champagne-toned oat.",
-    "colourNameZh": "燕麦色", "colourNameEn": "Oat",
+    "colourNameZh": "燕麦色",
+    "colourNameEn": "Oat",
     "swatch": "#BA9C73",
     "images": {
       "hanger": "images/oat-lace-crewneck-hanger.jpg",
       "flat": "images/oat-lace-crewneck-flat.jpg"
     },
-    "priceAUD": 80000,
-    "sold": false
+    "priceAUD": 38000,
+    "sold": false,
+    "img": "images/oat-lace-crewneck-hanger.jpg"
   },
   {
     "id": "sage-cable-crewneck",
     "no": 11,
-    "zh": "鼠尾草绿麻花圆领衫", "en": "Sage Cable Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "鼠尾草绿麻花圆领衫",
+    "en": "Sage Cable Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，喇叭袖口，通身粗麻花绞纹，柔和的鼠尾草绿。",
     "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, knit throughout in bold rope cables, in a soft, muted sage green.",
-    "colourNameZh": "鼠尾草绿", "colourNameEn": "Sage",
+    "colourNameZh": "鼠尾草绿",
+    "colourNameEn": "Sage",
     "swatch": "#8B936B",
     "images": {
       "hanger": "images/sage-cable-crewneck-hanger.jpg",
       "flat": "images/sage-cable-crewneck-flat.jpg"
     },
-    "priceAUD": 83000,
-    "sold": false
+    "priceAUD": 78000,
+    "sold": false,
+    "img": "images/sage-cable-crewneck-hanger.jpg"
   },
   {
-    "id": "olive-crewneck",
+    "id": "teal-crewneck",
     "no": 12,
-    "zh": "橄榄绿圆领衫", "en": "Olive Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，浓郁沉静的橄榄绿。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of deep, quiet olive green.",
-    "colourNameZh": "橄榄绿", "colourNameEn": "Olive",
-    "swatch": "#8B843B",
+    "zh": "青蓝圆领衫",
+    "en": "Teal Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，沉静通透的深青蓝色。",
+    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of deep, glassy teal.",
+    "colourNameZh": "青蓝",
+    "colourNameEn": "Teal",
+    "swatch": "#5A93A3",
     "images": {
-      "hanger": "images/olive-crewneck-hanger.jpg",
-      "flat": "images/olive-crewneck-flat.jpg"
+      "hanger": "images/teal-crewneck-hanger.jpg",
+      "flat": "images/teal-crewneck-flat.jpg"
     },
-    "priceAUD": 75000,
-    "sold": false
+    "priceAUD": 37000,
+    "sold": false,
+    "img": "images/teal-crewneck-hanger.jpg"
   },
   {
     "id": "rose-lace-dress",
     "no": 13,
-    "zh": "玫瑰粉镂空长裙", "en": "Rose Lace Dress",
-    "catZh": "连衣裙 · 马海毛混纺", "catEn": "Dress · Mohair Blend",
+    "zh": "玫瑰粉镂空长裙",
+    "en": "Rose Lace Dress",
+    "catZh": "连衣裙 · 马海毛混纺",
+    "catEn": "Dress · Mohair Blend",
     "descZh": "加长廓形，喇叭袖口，粗麻花绞纹与镂空蕾丝纹样交替排列，饱和通透的玫瑰粉。",
     "descEn": "An elongated, dress-length silhouette with fluted bell cuffs, alternating panels of rope cable and open lacework, in a saturated, glowing rose pink.",
-    "colourNameZh": "玫瑰粉", "colourNameEn": "Rose",
+    "colourNameZh": "玫瑰粉",
+    "colourNameEn": "Rose",
     "swatch": "#D26C83",
     "images": {
       "hanger": "images/rose-lace-dress-hanger.jpg",
       "flat": "images/rose-lace-dress-flat.jpg"
     },
-    "priceAUD": 100000,
-    "sold": false
+    "priceAUD": 78000,
+    "sold": false,
+    "img": "images/rose-lace-dress-hanger.jpg"
   },
   {
-    "id": "fuchsia-crewneck",
+    "id": "emerald-crewneck",
     "no": 14,
-    "zh": "桃红圆领衫", "en": "Fuchsia Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，浓烈鲜明的桃红色。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of vivid, saturated fuchsia.",
-    "colourNameZh": "桃红", "colourNameEn": "Fuchsia",
-    "swatch": "#A4224A",
+    "zh": "祖母绿圆领衫",
+    "en": "Emerald Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩廓形，罗纹下摆与袖口，蓬松晕光质地，浓郁祖母绿——意大利纱线特有的饱和色彩。",
+    "descEn": "A dropped-shoulder silhouette with ribbed cuffs and hem, in a soft, hazy halo of saturated emerald straight from the Italian dye house.",
+    "colourNameZh": "祖母绿",
+    "colourNameEn": "Emerald",
+    "swatch": "#297865",
     "images": {
-      "hanger": "images/fuchsia-crewneck-hanger.jpg"
+      "hanger": "images/emerald-crewneck-hanger.jpg",
+      "flat": "images/emerald-crewneck-flat.jpg",
+      "texture": "images/emerald-crewneck-texture.jpg"
     },
-    "priceAUD": 62000,
-    "sold": false
+    "priceAUD": 36000,
+    "sold": false,
+    "img": "images/emerald-crewneck-hanger.jpg"
   },
   {
     "id": "mushroom-open-knit",
     "no": 15,
-    "zh": "蘑菇棕镂空针织衫", "en": "Mushroom Open-Knit Sweater",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "蘑菇棕镂空针织衫",
+    "en": "Mushroom Open-Knit Sweater",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "宽松廓形，稀疏通透的镂空针法，肩部罗纹拼接，温润的蘑菇棕。",
     "descEn": "A relaxed silhouette knit in an airy, semi-sheer open gauge, with a ribbed yoke insert, in a warm mushroom taupe.",
-    "colourNameZh": "蘑菇棕", "colourNameEn": "Mushroom",
+    "colourNameZh": "蘑菇棕",
+    "colourNameEn": "Mushroom",
     "swatch": "#9C7965",
     "images": {
       "hanger": "images/mushroom-open-knit-hanger.jpg",
       "flat": "images/mushroom-open-knit-flat.jpg"
     },
-    "priceAUD": 70000,
-    "sold": false
+    "priceAUD": 38000,
+    "sold": false,
+    "img": "images/mushroom-open-knit-hanger.jpg"
   },
   {
     "id": "periwinkle-open-knit",
     "no": 16,
-    "zh": "长春花蓝镂空针织衫", "en": "Periwinkle Open-Knit Sweater",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "长春花蓝镂空针织衫",
+    "en": "Periwinkle Open-Knit Sweater",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "加长廓形，稀疏通透的镂空针法，肩部罗纹拼接，清透的长春花蓝。",
     "descEn": "An elongated, tunic-length silhouette knit in an airy, semi-sheer open gauge, with a ribbed yoke insert, in a clear periwinkle blue.",
-    "colourNameZh": "长春花蓝", "colourNameEn": "Periwinkle",
+    "colourNameZh": "长春花蓝",
+    "colourNameEn": "Periwinkle",
     "swatch": "#8492BB",
     "images": {
       "hanger": "images/periwinkle-open-knit-hanger.jpg",
       "flat": "images/periwinkle-open-knit-flat.jpg"
     },
-    "priceAUD": 75000,
-    "sold": false
+    "priceAUD": 38000,
+    "sold": false,
+    "img": "images/periwinkle-open-knit-hanger.jpg"
   },
   {
     "id": "oat-cable-trim-crewneck",
     "no": 17,
-    "zh": "暖驼色绞花滚边圆领衫", "en": "Oat Cable-Trim Crewneck",
-    "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
+    "zh": "暖驼色绞花滚边圆领衫",
+    "en": "Oat Cable-Trim Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
     "descZh": "落肩廓形，密实针法，喇叭袖外侧饰以细绞花滚边，温暖厚实的暖驼色。",
     "descEn": "A dropped-shoulder crewneck in a dense, opaque knit, with a fine cable trim edging the outer seam of each bell cuff, in a warm, substantial taupe.",
-    "colourNameZh": "暖驼色", "colourNameEn": "Warm Taupe",
+    "colourNameZh": "暖驼色",
+    "colourNameEn": "Warm Taupe",
     "swatch": "#AB9284",
     "images": {
       "hanger": "images/oat-cable-trim-crewneck-hanger.jpg"
     },
-    "priceAUD": 68000,
-    "sold": false
+    "priceAUD": 49000,
+    "sold": false,
+    "img": "images/oat-cable-trim-crewneck-hanger.jpg"
   }
 ]

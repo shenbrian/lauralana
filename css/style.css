@@ -334,10 +334,10 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
 /* ===========================================================
    Collection — The Ledger
    Each piece is catalogued, not shelved: a running specimen
-   number, a diptych of the garment (hanger + flat), a macro
-   texture detail, and a true colour swatch sampled from the
-   piece itself. Rows stack vertically, divided by hairlines,
-   like pages in a studio ledger rather than a shop grid.
+   number, a single photograph, and a line-drawn flower mark
+   tinted to the piece's true colour. Rows stack vertically,
+   divided by hairlines, like pages in a studio ledger rather
+   than a shop grid.
 =========================================================== */
 .ledger{ margin-top: 56px; }
 
@@ -367,10 +367,9 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
   .ledger-body{ grid-template-columns: 1fr; gap: 28px; }
 }
 
-.ledger-visual{ display:flex; flex-direction:column; gap:14px; }
-.ledger-diptych{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+.ledger-visual{ display:block; }
 
-.ledger-photo, .ledger-texture{
+.ledger-photo{
   position:relative;
   overflow:hidden;
   border: 1px solid var(--line);
@@ -378,38 +377,25 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
     repeating-linear-gradient(135deg, rgba(23,20,15,.035) 0 2px, transparent 2px 16px),
     var(--paper);
   display:flex; align-items:center; justify-content:center;
+  aspect-ratio: 4/5;
 }
-.ledger-photo{ aspect-ratio: 4/5; }
-.ledger-photo img, .ledger-texture img{ width:100%; height:100%; object-fit:cover; display:block; }
-.ledger-photo .placeholder-icon, .ledger-texture .placeholder-icon{ width:32px; height:32px; opacity:.28; color: var(--ink); }
-.ledger-photo-label, .ledger-texture-label{
+.ledger-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+.ledger-photo .placeholder-icon{ width:32px; height:32px; opacity:.28; color: var(--ink); }
+.ledger-photo-label{
   position:absolute; left:8px; bottom:8px;
   font-size:9px; letter-spacing:.12em; text-transform:uppercase;
   color: var(--ink-faint); background: rgba(247,244,238,.88);
   padding: 4px 7px;
 }
-html[data-lang="zh"] .ledger-photo-label, html[data-lang="zh"] .ledger-texture-label{ letter-spacing:.04em; text-transform:none; }
+html[data-lang="zh"] .ledger-photo-label{ letter-spacing:.04em; text-transform:none; }
 
-.ledger-specimen{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
-.ledger-texture{ aspect-ratio: 1/1; }
-
-.ledger-swatch{
-  aspect-ratio: 1/1;
-  border: 1px solid var(--line);
-  background: var(--paper);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:9px;
-  padding: 10px;
+.ledger-flower{
+  position:absolute; right:10px; bottom:10px;
+  background: rgba(247,244,238,.92);
+  border-radius:50%;
+  padding:4px;
+  box-shadow: 0 1px 4px rgba(23,20,15,.14);
 }
-.ledger-swatch-chip{
-  width:58%; height:42%;
-  border: 1px solid rgba(23,20,15,.15);
-  box-shadow: 0 1px 3px rgba(23,20,15,.1);
-}
-.ledger-swatch-label{
-  font-size:9.5px; letter-spacing:.12em; text-transform:uppercase;
-  color: var(--ink-faint); text-align:center;
-}
-html[data-lang="zh"] .ledger-swatch-label{ letter-spacing:.04em; text-transform:none; }
 
 .ledger-info{ padding-top: 2px; }
 .ledger-cat{
@@ -448,7 +434,7 @@ html[data-lang="zh"] .ledger-acquire{ letter-spacing:.03em; text-transform:none;
 .ledger-enquire:hover{ color: var(--accent); border-color: var(--accent); }
 
 .ledger-item[data-sold="true"] .ledger-photo img,
-.ledger-item[data-sold="true"] .ledger-texture img{
+.ledger-item[data-sold="true"] .ledger-flower{
   filter: grayscale(.55) opacity(.82);
 }
 
