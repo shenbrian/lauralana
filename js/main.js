@@ -49,15 +49,55 @@ function formatNo(n){
   return 'N° ' + String(n).padStart(3, '0');
 }
 
-function flowerMark(hex, size = 52) {
-  const petals = [0, 72, 144, 216, 288].map(angle =>
-    `<ellipse cx="26" cy="14" rx="6" ry="11"
-      transform="rotate(${angle} 26 26)"
-      fill="none" stroke="${hex}" stroke-width="1.3"/>`
-  ).join('');
-  return `<svg class="ledger-flower" width="${size}" height="${size}"
-    viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-    ${petals}<circle cx="26" cy="26" r="3" fill="${hex}"/>
+function botanicalMark(hex, size = 320) {
+  const stem = '#6B7A5E';
+  const ink = '#5B584F';
+  const filterId = 'wc-' + hex.replace('#', '');
+  const petalAngles = [0, 72, 144, 216, 288];
+
+  const outerWash = petalAngles.map(a => `
+    <ellipse cx="100" cy="52" rx="26" ry="44" fill="${hex}" fill-opacity="0.14"
+      transform="rotate(${a} 100 88)"/>`).join('');
+  const midWash = petalAngles.map(a => `
+    <ellipse cx="100" cy="60" rx="18" ry="34" fill="${hex}" fill-opacity="0.30"
+      transform="rotate(${a} 100 88)"/>`).join('');
+  const inkPetals = petalAngles.map(a => `
+    <ellipse cx="100" cy="66" rx="11" ry="24" fill="${hex}" fill-opacity="0.6"
+      stroke="${ink}" stroke-width="0.5" stroke-opacity="0.55"
+      transform="rotate(${a} 100 88)"/>`).join('');
+
+  return `
+  <svg class="ledger-botanical-svg" width="${size}" height="${size}" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="${filterId}" x="-40%" y="-40%" width="180%" height="180%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018 0.03" numOctaves="2" seed="7" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+
+    <g filter="url(#${filterId})">
+      <path d="M100 250 C 92 205, 110 165, 99 118" stroke="${stem}" stroke-width="2" fill="none"/>
+
+      <path d="M98 230 C 72 227, 52 212, 45 188 C 71 190, 91 208, 98 230 Z" fill="${stem}" fill-opacity="0.48" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="M60 197 C 68 205, 78 214, 90 221" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+
+      <path d="M99 195 C 76 190, 59 175, 53 152 C 77 156, 94 173, 99 195 Z" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="M62 160 C 70 169, 81 178, 92 186" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+
+      <path d="M101 165 C 123 158, 139 141, 144 117 C 121 123, 105 143, 101 165 Z" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="M137 129 C 128 137, 117 146, 106 154" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+
+      <path d="M99 152 C 84 148, 68 140, 56 128" stroke="${stem}" stroke-width="1.2" fill="none"/>
+      <ellipse cx="50" cy="122" rx="8.5" ry="14" fill="${hex}" fill-opacity="0.5" stroke="${ink}" stroke-width="0.45" stroke-opacity="0.45" transform="rotate(-48 50 122)"/>
+      <path d="M50 109 L 50 123" stroke="${ink}" stroke-width="0.4" stroke-opacity="0.35" fill="none" transform="rotate(-48 50 122)"/>
+
+      ${outerWash}
+      ${midWash}
+      ${inkPetals}
+      <circle cx="100" cy="88" r="6" fill="${hex}"/>
+      <circle cx="100" cy="88" r="6" fill="none" stroke="${ink}" stroke-width="0.4" stroke-opacity="0.5"/>
+      <circle cx="100" cy="88" r="2" fill="#FDFBF6"/>
+    </g>
   </svg>`;
 }
 
@@ -89,11 +129,17 @@ function renderLedger(){
 
   ledger.innerHTML = PRODUCTS.map(p => {
     const hasPrice = typeof p.priceAUD === 'number' && p.priceAUD > 0;
-    const flower = flowerMark(p.swatch || '#DDD6C6');
+    const botanical = botanicalMark(p.swatch || '#DDD6C6');
 
     const photoBlock = p.img
-      ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy">${flower}</div>`
-      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="照片待补充" data-en="Photo coming soon"></span>${flower}</div>`;
+      ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy"></div>`
+      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="照片待补充" data-en="Photo coming soon"></span></div>`;
+
+    const botanicalBlock = `
+      <div class="ledger-botanical">
+        ${botanical}
+        <span class="ledger-botanical-label i18n" data-zh="${p.colourNameZh || ''}" data-en="${p.colourNameEn || ''}"></span>
+      </div>`;
 
     const actionBlock = p.sold
       ? `<span class="ledger-archived i18n" data-zh="已被珍藏" data-en="Now with its owner"></span>`
@@ -112,6 +158,7 @@ function renderLedger(){
       <div class="ledger-body">
         <div class="ledger-visual">
           ${photoBlock}
+          ${botanicalBlock}
         </div>
         <div class="ledger-info">
           <span class="ledger-cat i18n" data-zh="${p.catZh}" data-en="${p.catEn}"></span>

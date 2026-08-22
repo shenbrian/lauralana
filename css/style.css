@@ -334,9 +334,9 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
 /* ===========================================================
    Collection — The Ledger
    Each piece is catalogued, not shelved: a running specimen
-   number, a single photograph, and a line-drawn flower mark
-   tinted to the piece's true colour. Rows stack vertically,
-   divided by hairlines, like pages in a studio ledger rather
+   number, a photograph, and a botanical study of the piece's
+   true colour, side by side like two plates in a studio
+   ledger. Rows stack vertically, divided by hairlines, rather
    than a shop grid.
 =========================================================== */
 .ledger{ margin-top: 56px; }
@@ -367,7 +367,7 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
   .ledger-body{ grid-template-columns: 1fr; gap: 28px; }
 }
 
-.ledger-visual{ display:block; }
+.ledger-visual{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
 
 .ledger-photo{
   position:relative;
@@ -389,13 +389,23 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
 }
 html[data-lang="zh"] .ledger-photo-label{ letter-spacing:.04em; text-transform:none; }
 
-.ledger-flower{
-  position:absolute; right:10px; bottom:10px;
-  background: rgba(247,244,238,.92);
-  border-radius:50%;
-  padding:4px;
-  box-shadow: 0 1px 4px rgba(23,20,15,.14);
+.ledger-botanical{
+  position:relative;
+  overflow:hidden;
+  border: 1px solid var(--line);
+  background: var(--bone);
+  aspect-ratio: 4/5;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: 10px 10px 14px;
+  box-sizing:border-box;
 }
+.ledger-botanical-svg{ width:100%; flex:1 1 auto; min-height:0; }
+.ledger-botanical-label{
+  margin-top:8px;
+  font-size:10px; letter-spacing:.14em; text-transform:uppercase; font-style:italic;
+  color: var(--ink-faint);
+}
+html[data-lang="zh"] .ledger-botanical-label{ font-style:normal; letter-spacing:.04em; text-transform:none; }
 
 .ledger-info{ padding-top: 2px; }
 .ledger-cat{
@@ -434,7 +444,7 @@ html[data-lang="zh"] .ledger-acquire{ letter-spacing:.03em; text-transform:none;
 .ledger-enquire:hover{ color: var(--accent); border-color: var(--accent); }
 
 .ledger-item[data-sold="true"] .ledger-photo img,
-.ledger-item[data-sold="true"] .ledger-flower{
+.ledger-item[data-sold="true"] .ledger-botanical-svg{
   filter: grayscale(.55) opacity(.82);
 }
 
