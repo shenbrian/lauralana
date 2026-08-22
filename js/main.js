@@ -245,7 +245,7 @@ function renderLedger(){
           <p class="ledger-desc i18n" data-zh="${p.descZh}" data-en="${p.descEn}"></p>
           <div class="ledger-actions">
             ${actionBlock}
-            <a class="ledger-enquire i18n" data-zh="咨询定制相近款式" data-en="Enquire About a Similar Piece"
+            <a class="ledger-enquire i18n" data-zh="咨询近似款式" data-en="Enquire About a Similar Piece"
                href="#contact" data-item-zh="${p.zh}" data-item-en="${p.en}"></a>
           </div>
         </div>
