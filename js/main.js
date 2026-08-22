@@ -49,28 +49,104 @@ function formatNo(n){
   return 'N° ' + String(n).padStart(3, '0');
 }
 
-function botanicalMark(hex, size = 320) {
+/* Deterministic per-piece pseudo-randomness: the same product id always
+   produces the same seed, and the same seed always produces the same
+   sequence of PRNG draws — so each product's botanical illustration is
+   stable across reloads, but distinct from every other product's. */
+function seedFromId(id) {
+  let h = 5381;
+  for (let i = 0; i < id.length; i++) {
+    h = ((h << 5) + h) ^ id.charCodeAt(i);
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let t = seed >>> 0;
+  return function () {
+    t += 0x6D2B79F5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function jitterPoint(x, y, px, py, angleDeg, scale) {
+  const rad = angleDeg * Math.PI / 180;
+  const dx = (x - px) * scale, dy = (y - py) * scale;
+  return [
+    px + dx * Math.cos(rad) - dy * Math.sin(rad),
+    py + dx * Math.sin(rad) + dy * Math.cos(rad)
+  ];
+}
+
+function buildLeaf(pivot, bladePts, veinPts, angleDeg, scale) {
+  const [px, py] = pivot;
+  const jb = bladePts.map(([x, y]) => jitterPoint(x, y, px, py, angleDeg, scale));
+  const jv = veinPts.map(([x, y]) => jitterPoint(x, y, px, py, angleDeg, scale));
+  const f = n => n.toFixed(1);
+  const bladePath = `M${f(px)} ${f(py)} C ${f(jb[0][0])} ${f(jb[0][1])}, ${f(jb[1][0])} ${f(jb[1][1])}, ${f(jb[2][0])} ${f(jb[2][1])} C ${f(jb[3][0])} ${f(jb[3][1])}, ${f(jb[4][0])} ${f(jb[4][1])}, ${f(px)} ${f(py)} Z`;
+  const veinPath = `M${f(jv[0][0])} ${f(jv[0][1])} C ${f(jv[1][0])} ${f(jv[1][1])}, ${f(jv[2][0])} ${f(jv[2][1])}, ${f(jv[3][0])} ${f(jv[3][1])}`;
+  return { bladePath, veinPath };
+}
+
+function botanicalMark(hex, size = 320, seed = 0) {
   const stem = '#6B7A5E';
   const ink = '#5B584F';
-  const filterId = 'wc-' + hex.replace('#', '');
-  const petalAngles = [0, 72, 144, 216, 288];
+  const rng = mulberry32(seed);
+  const range = (min, max) => min + rng() * (max - min);
+  const f = n => n.toFixed(1);
+
+  const filterId = 'wc-' + hex.replace('#', '') + '-' + seed;
+
+  // Bud: one angle drives both its tilt and its swing around the stem
+  // attachment point, relative to the original fixed -48deg design.
+  const budAngle = range(-60, -35);
+  const budDelta = budAngle + 48;
+  const stemPivot = [99, 152];
+  const [bc1x, bc1y] = jitterPoint(84, 148, stemPivot[0], stemPivot[1], budDelta, 1);
+  const [bc2x, bc2y] = jitterPoint(68, 140, stemPivot[0], stemPivot[1], budDelta, 1);
+  const [bex, bey] = jitterPoint(56, 128, stemPivot[0], stemPivot[1], budDelta, 1);
+  const [budCx, budCy] = jitterPoint(50, 122, stemPivot[0], stemPivot[1], budDelta, 1);
+  const budBranch = `M${stemPivot[0]} ${stemPivot[1]} C ${f(bc1x)} ${f(bc1y)}, ${f(bc2x)} ${f(bc2y)}, ${f(bex)} ${f(bey)}`;
+
+  // Leaves: rotate + uniformly scale each leaf's free points around its
+  // fixed stem attachment point, so it stays leaf-shaped, just angled/sized differently.
+  const baseLeaf = buildLeaf([98, 230],
+    [[72, 227], [52, 212], [45, 188], [71, 190], [91, 208]],
+    [[60, 197], [68, 205], [78, 214], [90, 221]],
+    range(-13, 13), range(0.87, 1.15));
+  const midLeaf = buildLeaf([99, 195],
+    [[76, 190], [59, 175], [53, 152], [77, 156], [94, 173]],
+    [[62, 160], [70, 169], [81, 178], [92, 186]],
+    range(-13, 13), range(0.87, 1.15));
+  const upperLeaf = buildLeaf([101, 165],
+    [[123, 158], [139, 141], [144, 117], [121, 123], [105, 143]],
+    [[137, 129], [128, 137], [117, 146], [106, 154]],
+    range(-13, 13), range(0.87, 1.15));
+
+  // Flower head: rotate the whole 5-petal arrangement's starting angle.
+  const flowerRotOffset = range(0, 72);
+  const petalAngles = [0, 72, 144, 216, 288].map(a => a + flowerRotOffset);
 
   const outerWash = petalAngles.map(a => `
     <ellipse cx="100" cy="52" rx="26" ry="44" fill="${hex}" fill-opacity="0.14"
-      transform="rotate(${a} 100 88)"/>`).join('');
+      transform="rotate(${f(a)} 100 88)"/>`).join('');
   const midWash = petalAngles.map(a => `
     <ellipse cx="100" cy="60" rx="18" ry="34" fill="${hex}" fill-opacity="0.30"
-      transform="rotate(${a} 100 88)"/>`).join('');
+      transform="rotate(${f(a)} 100 88)"/>`).join('');
   const inkPetals = petalAngles.map(a => `
     <ellipse cx="100" cy="66" rx="11" ry="24" fill="${hex}" fill-opacity="0.6"
       stroke="${ink}" stroke-width="0.5" stroke-opacity="0.55"
-      transform="rotate(${a} 100 88)"/>`).join('');
+      transform="rotate(${f(a)} 100 88)"/>`).join('');
+
+  const turbulenceSeed = Math.floor(range(1, 999));
 
   return `
   <svg class="ledger-botanical-svg" width="${size}" height="${size}" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <filter id="${filterId}" x="-40%" y="-40%" width="180%" height="180%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.018 0.03" numOctaves="2" seed="7" result="noise"/>
+        <feTurbulence type="fractalNoise" baseFrequency="0.018 0.03" numOctaves="2" seed="${turbulenceSeed}" result="noise"/>
         <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G"/>
       </filter>
     </defs>
@@ -78,18 +154,18 @@ function botanicalMark(hex, size = 320) {
     <g filter="url(#${filterId})">
       <path d="M100 250 C 92 205, 110 165, 99 118" stroke="${stem}" stroke-width="2" fill="none"/>
 
-      <path d="M98 230 C 72 227, 52 212, 45 188 C 71 190, 91 208, 98 230 Z" fill="${stem}" fill-opacity="0.48" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
-      <path d="M60 197 C 68 205, 78 214, 90 221" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+      <path d="${baseLeaf.bladePath}" fill="${stem}" fill-opacity="0.48" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="${baseLeaf.veinPath}" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
 
-      <path d="M99 195 C 76 190, 59 175, 53 152 C 77 156, 94 173, 99 195 Z" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
-      <path d="M62 160 C 70 169, 81 178, 92 186" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+      <path d="${midLeaf.bladePath}" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="${midLeaf.veinPath}" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
 
-      <path d="M101 165 C 123 158, 139 141, 144 117 C 121 123, 105 143, 101 165 Z" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
-      <path d="M137 129 C 128 137, 117 146, 106 154" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
+      <path d="${upperLeaf.bladePath}" fill="${stem}" fill-opacity="0.5" stroke="${stem}" stroke-width="0.4" stroke-opacity="0.4"/>
+      <path d="${upperLeaf.veinPath}" stroke="${stem}" stroke-width="0.5" fill="none" opacity="0.5"/>
 
-      <path d="M99 152 C 84 148, 68 140, 56 128" stroke="${stem}" stroke-width="1.2" fill="none"/>
-      <ellipse cx="50" cy="122" rx="8.5" ry="14" fill="${hex}" fill-opacity="0.5" stroke="${ink}" stroke-width="0.45" stroke-opacity="0.45" transform="rotate(-48 50 122)"/>
-      <path d="M50 109 L 50 123" stroke="${ink}" stroke-width="0.4" stroke-opacity="0.35" fill="none" transform="rotate(-48 50 122)"/>
+      <path d="${budBranch}" stroke="${stem}" stroke-width="1.2" fill="none"/>
+      <ellipse cx="${f(budCx)}" cy="${f(budCy)}" rx="8.5" ry="14" fill="${hex}" fill-opacity="0.5" stroke="${ink}" stroke-width="0.45" stroke-opacity="0.45" transform="rotate(${f(budAngle)} ${f(budCx)} ${f(budCy)})"/>
+      <path d="M${f(budCx)} ${f(budCy - 13)} L ${f(budCx)} ${f(budCy + 1)}" stroke="${ink}" stroke-width="0.4" stroke-opacity="0.35" fill="none" transform="rotate(${f(budAngle)} ${f(budCx)} ${f(budCy)})"/>
 
       ${outerWash}
       ${midWash}
@@ -129,7 +205,7 @@ function renderLedger(){
 
   ledger.innerHTML = PRODUCTS.map(p => {
     const hasPrice = typeof p.priceAUD === 'number' && p.priceAUD > 0;
-    const botanical = botanicalMark(p.swatch || '#DDD6C6');
+    const botanical = botanicalMark(p.swatch || '#DDD6C6', undefined, seedFromId(p.id));
 
     const photoBlock = p.img
       ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy"></div>`
