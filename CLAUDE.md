@@ -56,4 +56,4 @@ No build tooling — deploy is just `git push` to `main` (Vercel auto-deploys). 
 
 ## Known placeholder/unverified content
 
-Contact details in the Contact section and in `main.js`'s mailto fallback (`hello@lauralana.au`, Instagram `@lauralana.au`, WeChat `LauraLana_Studio`) are placeholders pending confirmation — don't treat them as verified when referencing or changing contact flows.
+The contact email (`laura.li6500@hotmail.com`, used in both the Contact section and `main.js`'s mailto fallback) is confirmed real. Instagram (`@lauralana.au`) and WeChat (`LauraLana_Studio`) are still placeholders pending confirmation — don't treat those two as verified when referencing or changing contact flows.

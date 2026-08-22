@@ -44,10 +44,11 @@ lauralana/
 
 ## 联系方式
 
-`index.html` 的「联系」板块中，请把以下占位信息替换为真实信息：
-- 邮箱 `hello@lauralana.au`
-- Instagram `@lauralana.au`
-- 微信号 `LauraLana_Studio`
+`index.html` 的「联系」板块中：
+- 邮箱已更新为真实地址 `laura.li6500@hotmail.com`
+- 以下占位信息仍需替换为真实信息：
+  - Instagram `@lauralana.au`
+  - 微信号 `LauraLana_Studio`
 
 ## 关于询价表单
 

@@ -128,7 +128,7 @@ SVG symbol，全站通过 `<use href="#yarnball">` 复用；线头方向靠 `.ya
 
 - 更多真实作品的高清三连图（衣架/平摊/纹理特写）陆续补充中
 - 联系表单仍是纯前端 mailto，没有真正后端收件（可接 Formspree / Netlify Forms）
-- 联系方式（邮箱 hello@lauralana.au、Instagram @lauralana.au、微信号 LauraLana_Studio）**仍是占位，需核实**
+- 联系方式：邮箱已确认为真实地址 `laura.li6500@hotmail.com`；Instagram @lauralana.au、微信号 LauraLana_Studio **仍是占位，需核实**
 - Stripe 目前是测试模式，正式收款前需要在 Stripe 后台完成 Activate payments（公司信息、银行账户等），并把 key 换成 live 版本
 - 售出状态目前手动维护；未来如果订单量变大，可以考虑加 Stripe Webhook + 数据库（Supabase）自动同步"已售出"状态
 - 已有一份《竞品格局与定价策略报告》，定价参考区间 A$450–900（毛衣/开衫）、A$700–1,400+（连衣裙）

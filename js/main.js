@@ -403,7 +403,7 @@ function initContactForm(){
       ? [`姓名：${data.get('name')}`, `联系方式：${data.get('reach')}`, `感兴趣的作品：${data.get('item') || '未填写'}`, '', '留言：', data.get('message')]
       : [`Name: ${data.get('name')}`, `Reach: ${data.get('reach')}`, `Interested piece: ${data.get('item') || 'N/A'}`, '', 'Message:', data.get('message')];
     const body = bodyLines.join('\n');
-    window.location.href = `mailto:hello@lauralana.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:laura.li6500@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
 
