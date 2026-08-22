@@ -55,7 +55,7 @@
       "flat": "images/indigo-marl-crewneck-flat.jpg",
       "texture": "images/indigo-marl-crewneck-texture.jpg"
     },
-    "priceAUD": 38000,
+    "priceAUD": 28000,
     "sold": false,
     "img": "images/indigo-marl-crewneck-hanger.jpg"
   },
@@ -74,7 +74,7 @@
     "images": {
       "hanger": "images/cornflower-crewneck-hanger.jpg"
     },
-    "priceAUD": 68000,
+    "priceAUD": 38000,
     "sold": false,
     "img": "images/cornflower-crewneck-hanger.jpg"
   },
@@ -94,7 +94,7 @@
       "hanger": "images/cornflower-cable-skirt-hanger.jpg",
       "texture": "images/cornflower-cable-skirt-texture.jpg"
     },
-    "priceAUD": 68000,
+    "priceAUD": 32000,
     "sold": false,
     "img": "images/cornflower-cable-skirt-hanger.jpg"
   },
@@ -114,7 +114,7 @@
       "hanger": "images/dusty-mauve-crewneck-hanger.jpg",
       "flat": "images/dusty-mauve-crewneck-flat.jpg"
     },
-    "priceAUD": 78000,
+    "priceAUD": 79000,
     "sold": false,
     "img": "images/dusty-mauve-crewneck-hanger.jpg"
   },
@@ -135,7 +135,7 @@
       "flat": "images/lavender-crewneck-flat.jpg",
       "texture": "images/lavender-crewneck-texture.jpg"
     },
-    "priceAUD": 79000,
+    "priceAUD": 78000,
     "sold": false,
     "img": "images/lavender-crewneck-hanger.jpg"
   },
@@ -155,7 +155,7 @@
       "hanger": "images/lilac-crewneck-hanger.jpg",
       "flat": "images/lilac-crewneck-flat.jpg"
     },
-    "priceAUD": 36000,
+    "priceAUD": 29000,
     "sold": false,
     "img": "images/lilac-crewneck-hanger.jpg"
   },
@@ -214,7 +214,7 @@
       "hanger": "images/sage-cable-crewneck-hanger.jpg",
       "flat": "images/sage-cable-crewneck-flat.jpg"
     },
-    "priceAUD": 78000,
+    "priceAUD": 79000,
     "sold": false,
     "img": "images/sage-cable-crewneck-hanger.jpg"
   },
@@ -234,7 +234,7 @@
       "hanger": "images/teal-crewneck-hanger.jpg",
       "flat": "images/teal-crewneck-flat.jpg"
     },
-    "priceAUD": 37000,
+    "priceAUD": 28000,
     "sold": false,
     "img": "images/teal-crewneck-hanger.jpg"
   },
@@ -254,7 +254,7 @@
       "hanger": "images/rose-lace-dress-hanger.jpg",
       "flat": "images/rose-lace-dress-flat.jpg"
     },
-    "priceAUD": 78000,
+    "priceAUD": 80000,
     "sold": false,
     "img": "images/rose-lace-dress-hanger.jpg"
   },
@@ -295,7 +295,7 @@
       "hanger": "images/mushroom-open-knit-hanger.jpg",
       "flat": "images/mushroom-open-knit-flat.jpg"
     },
-    "priceAUD": 38000,
+    "priceAUD": 36000,
     "sold": false,
     "img": "images/mushroom-open-knit-hanger.jpg"
   },
