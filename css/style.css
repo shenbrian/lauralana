@@ -322,13 +322,18 @@ html[data-lang="zh"] .lookbook-frame .frame-caption{ letter-spacing:.06em; text-
 .statement-quote{
   font-family: var(--font-display-en);
   font-style: italic; font-weight:400;
+  font-variation-settings: "opsz" 144;
   font-size: clamp(26px, 3.6vw, 42px);
   line-height:1.38; color: var(--ink);
   margin-bottom:22px;
 }
 html[data-lang="zh"] .statement-quote{
-  font-family: var(--font-display-zh);
-  font-style:normal; font-weight:500;
+  font-family: 'Ma Shan Zheng', var(--font-display-zh), serif;
+  font-style:normal; font-weight:400;
+  font-variation-settings: normal;
+  font-size: clamp(17px, 4.2vw, 34px);
+  line-height:1.6;
+  white-space: nowrap;
 }
 .statement-attribution{
   font-size:12.5px; letter-spacing:.1em; text-transform:uppercase;
