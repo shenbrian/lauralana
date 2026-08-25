@@ -1,144 +1,111 @@
 # LAURA LANA — 项目状态文档
 *最后更新：2026 年 8 月*
 
-> 这份文档的作用：让任何一个新开的对话（网页端 Claude.ai 或本地 Claude Code）一打开就知道这个项目现在在哪、用的什么技术、设计上定过哪些规矩、还差什么没做。请把这份文档更新到本 Project 的 **Project Knowledge**（项目知识库）里。本地 `C:\dev\lauralana` 根目录还有一份 `CLAUDE.md`，是 Claude Code 专用的技术说明，两者内容会有重叠，但这份是给人看、也给网页端 Claude 看的完整背景。
+> 这份文档的作用：让任何一个新开的对话（网页端 Claude.ai 或本地 Claude Code）一打开就知道这个项目现在在哪。请把这份文档更新到本 Project 的 **Project Knowledge**。本地 `C:\dev\lauralana\CLAUDE.md` 是 Claude Code 专用的技术细节文档，两者保持大致同步即可。
 
 ---
 
 ## 一、项目是什么
 
-**LAURA LANA**（www.lauralana.au）—— 原创设计、独一无二、手工编织的马海毛女装毛衣与毛裙品牌。
+**LAURA LANA**（www.lauralana.au）—— 原创设计、独一无二、手工编织的马海毛女装毛衣与毛裙品牌。**核心定位**：画廊/工作室模式，每件作品都是真实存在的孤品（One of One），网站陈列的就是实际库存。
 
-**核心定位**：不是普通电商网店，是"作品陈列 + 直接购藏 / 定制咨询"并存的画廊/工作室模式。**每件作品都是真实存在的孤品（One of One）**——网站上陈列的就是实际库存，不是预设的品类占位。
+**品牌灵魂宣言**（创始人 Laura 原话，已上线为独立板块）：
+> "把喜欢的颜色，都织进了毛衣里。"
+> "Every colour I've ever loved, I've knitted into a sweater."
 
-**关键事实（不要弄错）**：
-- 纱线**从意大利顶级马海毛纺线商采购**（不是自己养羊剪毛）
-- 编织工作在**澳洲**由设计师本人完成
-- 品牌最大的差异化卖点是**色彩极其丰富**（意大利纱线商以饱和色著称）
-- 语言：**英文为主，中文为辅**（默认打开是英文，右上角可切换）
-- **每件作品的颜色是从实拍图里真实取样的**，不再强行套用固定的"品牌六色"——六色现在只用于品牌视觉故事（首页色彩圆点、logo），不用于限定实际陈列
-
----
-
-## 二、技术栈 & 部署链路
-
-- **代码托管**：GitHub，仓库 `github.com/shenbrian/lauralana`
-- **网站部署**：Vercel（项目名 `lauralana`），GitHub 仓库和 Vercel 项目已经打通——每次 `git push` 到 main 分支自动重新部署
-- **域名**：`www.lauralana.au`，DNS 在 Crazy Domains，已指向 Vercel
-- **本地开发环境**：Windows，项目文件夹 `C:\dev\lauralana`，VS Code + 内置终端（PowerShell），**现已安装 Claude Code**（可以直接在项目目录里对话式改文件、跑 git）
-- **网站本身**：静态前端（`index.html` + `css/style.css` + `js/main.js`，无构建步骤）**+ 一个 Vercel Serverless Function**（`api/create-checkout-session.js`，处理 Stripe 结账）
-
-### 日常更新流程
-- 如果用 Claude Code：直接在终端里说需求，它会改文件并可以直接跑 git 命令
-- 如果通过网页端 Claude.ai：下载文件覆盖到本地对应位置，然后：
-  ```
-  git add .
-  git commit -m "描述这次改了什么"
-  git push
-  ```
-- 每次改了 CSS 或 JS，`index.html` 里引用的 `?v=数字` 要 +1（当前 v=19），否则浏览器/CDN 可能读到旧文件缓存
-
-### 常见坑
-- Windows 下载同名文件容易变成 `style (6).css` 导致 404，下载前清空同名旧文件
-- `git status` 是排查"是不是真的改了/push了"最好用的命令
+- 纱线从意大利顶级马海毛纺线商采购，编织在澳洲由设计师本人完成
+- 语言：英文为主（默认），中文为辅——**草拟任何文案时英文是主稿，中文是翻译稿**
+- 每件作品的颜色从实拍图真实取样，不套用固定色系
 
 ---
 
-## 三、设计系统
+## 二、技术栈 & 部署
 
-### 字体
-- 品牌名 `LAURA LANA`：`Italiana`，全大写，字距拉宽
-- 大标题：英文 `Fraunces`，中文 `Noto Serif SC`
-- 正文/按钮：英文 `Work Sans`，中文 `Noto Sans SC`
-
-### 配色
-- 背景本色：`#F7F4EE`（bone）　卡片白：`#FFFFFF`　墨黑正文：`#17140F`
-- 次要文字：`#5B584F` / `#8A8677`　分隔线：`#DDD6C6`
-- 强调色（极少量使用）：深酒红 `#5B2A32`
-
-### 品牌六色（仅用于品牌视觉故事，不再用于限定商品陈列）
-樱桃红 `#B5232F`　钴蓝 `#1F4E9C`　祖母绿 `#146B4F`　藏红花黄 `#D98A1F`　洋红 `#A62368`　紫罗兰 `#5B3A87`
-
-### 毛线球图标（Yarn Ball Mark）
-SVG symbol，全站通过 `<use href="#yarnball">` 复用；线头方向靠 `.yarn-mark--down/--right/--left/--up` 控制。容器尺寸需设成文字字号的约 2.6 倍并用负 margin 裁掉留白，才能让球的视觉大小匹配文字。
+- GitHub `github.com/shenbrian/lauralana` → Vercel 自动部署，域名 `www.lauralana.au`
+- 本地：Windows，`C:\dev\lauralana`，VS Code + **Claude Code**（已安装，日常改动主要通过它完成）
+- 架构：静态前端（`index.html` + `css/style.css` + `js/main.js`）+ 一个 Vercel Serverless Function（`api/create-checkout-session.js`）
+- 每次改 CSS/JS，`index.html` 里 `?v=数字` 要 +1（当前 **v=25**）
 
 ---
 
-## 四、作品陈列系统 ——「作品志 / The Ledger」（2026年8月新增）
+## 三、作品陈列系统 ——「作品志 / The Ledger」
 
-这是本月最大的一次改版：把"作品"板块从电商网格卡片，改成了呼应画廊/拍卖行编目方式的**单列纵向账本式陈列**，因为每件都是孤品，货架式陈列会削弱这一点。
+**版式**（本月经过一次结构调整，从"双联图+纹理特写+方色块"简化为现在这版）：
+1. 编目行：`N° 001` + 价格
+2. **左右等宽双框**：左框商品照片（`p.img`），右框**参数化生成的植物学插画**（`botanicalMark()`），花头颜色取该商品 swatch，茎叶固定鼠尾草绿，底部标签显示颜色名（如 "FUCHSIA"）
+   - 插画基于商品 id 做**确定性随机化**（`seedFromId()` + `mulberry32()` PRNG）：花苞角度、叶片形态、花瓣旋转起始角、水彩纹理噪点，17 件各不相同但同一件每次刷新构图一致
+3. 信息区：分类、名称、描述、操作区（未售出："购藏此作"文字链接走 Stripe；已售出："已被珍藏 / Now with its owner"，图片+插画同步做灰度处理）
 
-**版式**：每件作品一个条目，从上到下：
-1. **编目行**：`N° 001` 编号 + 价格（编号是真实的制作顺序，不是装饰）
-2. **视觉区**：
-   - 双联图（衣架照 + 平摊照，并排，呼应首屏 hero 的 diptych 视觉语言）
-   - 下方一小行：针法纹理特写 + 一枚从实拍图取样的**真实色卡**（带颜色命名，如"燕麦/Oat"）——这枚色卡呼应意大利纱线厂"色卡"传统，是品牌差异化故事的延伸，不是纯装饰
-3. **信息区**：分类、名称、描述、操作区
+**数据结构**（`data/products.json`，唯一数据源）：每条含 `id, no, zh/en, catZh/catEn, descZh/descEn, colourNameZh/En, swatch, img, priceAUD, sold`（`images.hanger/flat/texture` 字段仍保留但当前版式未使用）
 
-**操作区**（未售出 vs 已售出）：
-- 未售出：价格 + 文字链接"购藏此作 / Acquire This Piece"（点击走 Stripe 结账，不是电商实心按钮）
-- 已售出：不叫"SOLD"，改叫"已被珍藏 / Now with its owner"，图片做轻微低饱和处理；同时仍保留"咨询定制相近款式"链接，引导去做一件类似的新孤品
+**当前 17 件真实上架，最终编号与定价**（no:1、no:2 是刻意调整过位置的开场品牌印象）：
 
-**数据结构**（`data/products.json`，唯一数据源，前端渲染和 Stripe 后端共用）：
-```json
-{
-  "id": "emerald-crewneck",
-  "no": 1,
-  "zh": "祖母绿圆领衫", "en": "Emerald Crewneck",
-  "catZh": "毛衣 · 马海毛混纺", "catEn": "Sweater · Mohair Blend",
-  "descZh": "...", "descEn": "...",
-  "colourNameZh": "祖母绿", "colourNameEn": "Emerald",
-  "swatch": "#297865",
-  "images": { "hanger": "images/xxx-hanger.jpg", "flat": "images/xxx-flat.jpg", "texture": "images/xxx-texture.jpg" },
-  "priceAUD": 60000,
-  "sold": false
-}
-```
-目前已上架：**N° 001 祖母绿圆领衫**（用的是压缩过的示范图，等原图到位后直接替换同名文件即可，不用改 JSON）。
+| no | id | 名称 | 价格 |
+|---|---|---|---|
+| 1 | fuchsia-crewneck | Fuchsia Crewneck | A$490 |
+| 2 | olive-crewneck | Olive Crewneck | A$420 |
+| 3 | indigo-marl-crewneck | Indigo Marl Crewneck | A$380 |
+| 4 | cornflower-crewneck | Cornflower Crewneck | A$680 |
+| 5 | cornflower-cable-skirt | Cornflower Cable Skirt | A$680 |
+| 6 | dusty-mauve-crewneck | Dusty Mauve Crewneck | A$780 |
+| 7 | lavender-crewneck | Lavender Crewneck | A$790 |
+| 8 | lilac-crewneck | Lilac Crewneck | A$360 |
+| 9 | grey-lavender-batwing | Grey Lavender Batwing Top | A$280 |
+| 10 | oat-lace-crewneck | Oat Lace Crewneck | A$380 |
+| 11 | sage-cable-crewneck | Sage Cable Crewneck | A$780 |
+| 12 | teal-crewneck | Teal Crewneck | A$370 |
+| 13 | rose-lace-dress | Rose Lace Dress | A$780 |
+| 14 | emerald-crewneck | Emerald Crewneck | A$360 |
+| 15 | mushroom-open-knit | Mushroom Open-Knit Sweater | A$380 |
+| 16 | periwinkle-open-knit | Periwinkle Open-Knit Sweater | A$380 |
+| 17 | oat-cable-trim-crewneck | Oat Cable-Trim Crewneck | A$490 |
 
-**当前每件作品需要 3 张图**：衣架照、平摊照、针法纹理特写。**手机发送图片建议选"原图"**，避免微信/社交软件默认压缩导致网站上显示发虚（桌面端大图展示建议短边 ≥1200px，理想 1800–2000px）。
-
----
-
-## 五、Stripe 支付集成（2026年8月新增）
-
-- **账户**：Brian 有独立的 Stripe 账户专门给 LAURA LANA 用（跟另一个 DEAR SAUCE 项目账户分开），目前是 Sandbox 测试模式
-- **后端**：`api/create-checkout-session.js`，Vercel Serverless Function，读取 `data/products.json` 中的价格/售出状态，调用 Stripe REST API 动态生成 Checkout Session（不需要预先在 Stripe 后台建商品，价格改 JSON 文件即可）
-- **环境变量**：Vercel 项目需要设置 `STRIPE_SECRET_KEY`（Settings → Environment Variables），值是 Stripe 账户的 Secret key（测试期用 `sk_test_...`，正式收款前换成 `sk_live_...`）。改了环境变量需要重新部署一次才生效
-- **购买流程**：点击"购藏此作" → 调用 `/api/create-checkout-session` → 跳转 Stripe 托管结账页 → 完成后跳回网站显示中英文提示条（成功/取消两种状态）
-- **标记售出**：目前是手动流程——卖出一件后，把 `data/products.json` 里对应条目的 `"sold"` 改成 `true` 并 push。这样前端会隐藏购买按钮，后端也会拒绝对该商品的新支付请求（双重保险）。**注意：这不是自动化的**——没有接数据库，所以库存状态需要人工同步
+分类目前有四种：Sweater / Skirt / Top / Dress（均为 "· Mohair Blend"）。
 
 ---
 
-## 六、页面结构
+## 四、品牌宣言板块（新增）
 
-单页网站（`index.html`），锚点导航跳转：
-
-1. **首屏 Hero**：左右两张实拍照片拼接，文字叠在左边大图上，CTA + 品牌印记；首屏下方六色色彩故事圆点
-2. **材质故事 / Why Mohair**：马海毛+意大利纱线来源，四个特性卡片
-3. **作品 / The Ledger**：见上方第四节，单列编目式陈列，目前 1 件真实上架（N° 001）
-4. **工艺 / The Craft**：01–04 四步流程
-5. **关于我们 / About**：图文两栏，实拍工作室毛衣挂架照
-6. **联系 / Contact**：询价表单（mailto 方案，无后端收件）+ 直接联系方式
-7. **页脚**
+位置：首屏 Hero 和"材质故事"之间的独立板块 `.statement`。中文用行书字体 **Ma Shan Zheng**（仅此一处使用，强制单行不换行，`clamp(17px,4.2vw,34px)`），英文用 **Fraunces**、`font-variation-settings: "opsz" 144` 强化花体连笔感。这是全站唯一使用手写字体的地方，专门标记"这是创始人原话"。
 
 ---
 
-## 七、还没做 / 待确认
+## 五、Stripe 支付 —— **已转正式收款（Live 模式）**
 
-- 更多真实作品的高清三连图（衣架/平摊/纹理特写）陆续补充中
-- 联系表单仍是纯前端 mailto，没有真正后端收件（可接 Formspree / Netlify Forms）
-- 联系方式：邮箱已确认为真实地址 `laura.li6500@hotmail.com`；Instagram @lauralana.au、微信号 LauraLana_Studio **仍是占位，需核实**
-- Stripe 目前是测试模式，正式收款前需要在 Stripe 后台完成 Activate payments（公司信息、银行账户等），并把 key 换成 live 版本
-- 售出状态目前手动维护；未来如果订单量变大，可以考虑加 Stripe Webhook + 数据库（Supabase）自动同步"已售出"状态
-- 已有一份《竞品格局与定价策略报告》，定价参考区间 A$450–900（毛衣/开衫）、A$700–1,400+（连衣裙）
+- **账户结构**：Stripe 账户 **LAURA LANA** 是独立新建的（不是复用 DuDaoDong 那个已有账户），但法人主体和收款银行账户与另一个项目（Angel Brand Advisors Pty Limited，CBA 银行账户）共用——即 Stripe 后台的交易记录/报表完全分开，钱最终进同一个银行账户
+- **Statement descriptor**：已设为 `LAURA LANA`（客户信用卡账单上会显示这个名字，不是公司全名或别的项目名）
+- **已完成 Activate 流程**：业务信息、KYC、银行账户、打款频率（每周四自动打款）均已设置
+- **Vercel 环境变量 `STRIPE_SECRET_KEY` 已从 `sk_test_...` 换成 `sk_live_...`**，已重新部署
+- ⚠️ **现在网站上的购买是真实扣款**，测试卡（4242...）不再适用
+- **售出状态目前手动维护**：卖出后需手动把 `products.json` 对应条目的 `sold` 改成 `true` 并 push，没有接数据库自动同步
 
 ---
 
-## 八、怎么把这份文档接入新对话
+## 六、联系方式状态
 
-1. 打开这个 Project（LAURA LANA）的设置 → **Project Knowledge**
-2. 用这份新版覆盖旧版
-3. 本地 `C:\dev\lauralana\CLAUDE.md` 是 Claude Code 专用的技术细节文档，两者保持大致同步即可，不用完全一致
+- **邮箱已确认为真实地址**：`laura.li6500@hotmail.com`（替换了之前的占位 `hello@lauralana.au`），网站显示文字和 mailto 链接均已更新
+- **Instagram、微信号仍是占位**，尚未建立真实账号，待补
+- 联系表单仍是纯前端 mailto 方案，无真正后端收件
 
-**维护建议**：每次做完一轮比较大的改动（新的设计方向、新功能、数据结构变化），让 Claude 重新生成一版这份文档。小调整不用每次都更新。
+---
+
+## 七、本地工作流
+
+- **Claude Code 已安装**，日常改动主要通过它在 `C:\dev\lauralana` 完成，网页端 Claude.ai 主要用于设计方向讨论、图片评估、拟稿、给 Claude Code 下达指令
+- **重要习惯**：Claude Code 汇报"截图已发"时，那些截图是它本地生成的文件，**不会自动出现在网页对话里**，需要用户手动上传实际图片文件才能被网页端 Claude 看到并确认视觉效果；纯文字/数据类验证（如哈希对比、URL 抓取）可以直接采信不需要截图
+
+---
+
+## 八、还没做 / 待确认
+
+- Instagram、微信号真实账号建立
+- Rose Lace Dress（no:13）照片左下角有个标签贴纸痕迹，待裁图
+- 部分商品仍缺 `images.flat`/`images.texture` 原图（当前版式暂未使用，但以后可能用到单品详情页）
+- 联系表单换成真正后端收件（如 Formspree）
+- 首次真实交易验证：需要用真实银行卡走一遍完整流程确认到账
+
+---
+
+## 九、怎么把这份文档接入新对话
+
+打开这个 Project → **Project Knowledge**，用这份新版覆盖旧版即可。
