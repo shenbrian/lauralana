@@ -14,7 +14,7 @@
     "images": {
       "hanger": "images/fuchsia-crewneck-hanger.jpg"
     },
-    "priceAUD": 49000,
+    "priceAUD": 58000,
     "sold": false,
     "img": "images/fuchsia-crewneck-hanger.jpg"
   },
@@ -34,7 +34,7 @@
       "hanger": "images/olive-crewneck-hanger.jpg",
       "flat": "images/olive-crewneck-flat.jpg"
     },
-    "priceAUD": 42000,
+    "priceAUD": 49000,
     "sold": false,
     "img": "images/olive-crewneck-hanger.jpg"
   },
@@ -114,7 +114,7 @@
       "hanger": "images/dusty-mauve-crewneck-hanger.jpg",
       "flat": "images/dusty-mauve-crewneck-flat.jpg"
     },
-    "priceAUD": 79000,
+    "priceAUD": 89000,
     "sold": false,
     "img": "images/dusty-mauve-crewneck-hanger.jpg"
   },
@@ -135,7 +135,7 @@
       "flat": "images/lavender-crewneck-flat.jpg",
       "texture": "images/lavender-crewneck-texture.jpg"
     },
-    "priceAUD": 78000,
+    "priceAUD": 88000,
     "sold": false,
     "img": "images/lavender-crewneck-hanger.jpg"
   },
@@ -194,7 +194,7 @@
       "hanger": "images/oat-lace-crewneck-hanger.jpg",
       "flat": "images/oat-lace-crewneck-flat.jpg"
     },
-    "priceAUD": 38000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/oat-lace-crewneck-hanger.jpg"
   },
@@ -214,7 +214,7 @@
       "hanger": "images/sage-cable-crewneck-hanger.jpg",
       "flat": "images/sage-cable-crewneck-flat.jpg"
     },
-    "priceAUD": 79000,
+    "priceAUD": 89000,
     "sold": false,
     "img": "images/sage-cable-crewneck-hanger.jpg"
   },
@@ -234,7 +234,7 @@
       "hanger": "images/teal-crewneck-hanger.jpg",
       "flat": "images/teal-crewneck-flat.jpg"
     },
-    "priceAUD": 28000,
+    "priceAUD": 36000,
     "sold": false,
     "img": "images/teal-crewneck-hanger.jpg"
   },
@@ -254,7 +254,7 @@
       "hanger": "images/rose-lace-dress-hanger.jpg",
       "flat": "images/rose-lace-dress-flat.jpg"
     },
-    "priceAUD": 80000,
+    "priceAUD": 98000,
     "sold": false,
     "img": "images/rose-lace-dress-hanger.jpg"
   },
@@ -275,7 +275,7 @@
       "flat": "images/emerald-crewneck-flat.jpg",
       "texture": "images/emerald-crewneck-texture.jpg"
     },
-    "priceAUD": 36000,
+    "priceAUD": 39000,
     "sold": false,
     "img": "images/emerald-crewneck-hanger.jpg"
   },
@@ -295,7 +295,7 @@
       "hanger": "images/mushroom-open-knit-hanger.jpg",
       "flat": "images/mushroom-open-knit-flat.jpg"
     },
-    "priceAUD": 36000,
+    "priceAUD": 38000,
     "sold": false,
     "img": "images/mushroom-open-knit-hanger.jpg"
   },
@@ -334,7 +334,7 @@
     "images": {
       "hanger": "images/oat-cable-trim-crewneck-hanger.jpg"
     },
-    "priceAUD": 49000,
+    "priceAUD": 59000,
     "sold": false,
     "img": "images/oat-cable-trim-crewneck-hanger.jpg"
   }
