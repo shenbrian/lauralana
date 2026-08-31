@@ -60,47 +60,8 @@
     "img": "images/indigo-marl-crewneck-hanger.jpg"
   },
   {
-    "id": "cornflower-crewneck",
-    "no": 4,
-    "zh": "牛仔蓝圆领衫",
-    "en": "Cornflower Crewneck",
-    "catZh": "毛衣 · 马海毛混纺",
-    "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，轻盈罗纹质地，明快的牛仔蓝色。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a light, airy rib knit of bright cornflower blue.",
-    "colourNameZh": "牛仔蓝",
-    "colourNameEn": "Cornflower",
-    "swatch": "#5C749A",
-    "images": {
-      "hanger": "images/cornflower-crewneck-hanger.jpg"
-    },
-    "priceAUD": 38000,
-    "sold": false,
-    "img": "images/cornflower-crewneck-hanger.jpg"
-  },
-  {
-    "id": "cornflower-cable-skirt",
-    "no": 5,
-    "zh": "牛仔蓝麻花长裙",
-    "en": "Cornflower Cable Skirt",
-    "catZh": "半裙 · 马海毛混纺",
-    "catEn": "Skirt · Mohair Blend",
-    "descZh": "及踝A字长裙，通身粗麻花绞纹，与牛仔蓝圆领衫同色系，可单穿亦可叠穿成套。",
-    "descEn": "An ankle-length A-line skirt in bold rope cables throughout, in the same cornflower blue as the matching crewneck — wear alone or layered together.",
-    "colourNameZh": "牛仔蓝",
-    "colourNameEn": "Cornflower",
-    "swatch": "#5C739A",
-    "images": {
-      "hanger": "images/cornflower-cable-skirt-hanger.jpg",
-      "texture": "images/cornflower-cable-skirt-texture.jpg"
-    },
-    "priceAUD": 32000,
-    "sold": false,
-    "img": "images/cornflower-cable-skirt-hanger.jpg"
-  },
-  {
     "id": "dusty-mauve-crewneck",
-    "no": 6,
+    "no": 4,
     "zh": "雾霾玫瑰圆领衫",
     "en": "Dusty Mauve Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -120,7 +81,7 @@
   },
   {
     "id": "lavender-crewneck",
-    "no": 7,
+    "no": 5,
     "zh": "薰衣草紫圆领衫",
     "en": "Lavender Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -141,7 +102,7 @@
   },
   {
     "id": "lilac-crewneck",
-    "no": 8,
+    "no": 6,
     "zh": "浅丁香紫圆领衫",
     "en": "Lilac Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -160,27 +121,8 @@
     "img": "images/lilac-crewneck-hanger.jpg"
   },
   {
-    "id": "grey-lavender-batwing",
-    "no": 9,
-    "zh": "灰紫蝙蝠袖上衣",
-    "en": "Grey Lavender Batwing Top",
-    "catZh": "上衣 · 马海毛混纺",
-    "catEn": "Top · Mohair Blend",
-    "descZh": "方正宽松的蝙蝠袖廓形，七分袖，罗纹下摆与袖口，柔雾的灰紫色。",
-    "descEn": "A boxy, dolman-sleeved silhouette cropped to the elbow, with ribbed cuffs and hem, in a soft, smoky grey-lavender.",
-    "colourNameZh": "灰紫",
-    "colourNameEn": "Grey Lavender",
-    "swatch": "#BBB3C3",
-    "images": {
-      "hanger": "images/grey-lavender-batwing-hanger.jpg"
-    },
-    "priceAUD": 28000,
-    "sold": false,
-    "img": "images/grey-lavender-batwing-hanger.jpg"
-  },
-  {
     "id": "oat-lace-crewneck",
-    "no": 10,
+    "no": 7,
     "zh": "燕麦色镂空圆领衫",
     "en": "Oat Lace Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -200,7 +142,7 @@
   },
   {
     "id": "sage-cable-crewneck",
-    "no": 11,
+    "no": 8,
     "zh": "鼠尾草绿麻花圆领衫",
     "en": "Sage Cable Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -220,7 +162,7 @@
   },
   {
     "id": "teal-crewneck",
-    "no": 12,
+    "no": 9,
     "zh": "青蓝圆领衫",
     "en": "Teal Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -240,7 +182,7 @@
   },
   {
     "id": "rose-lace-dress",
-    "no": 13,
+    "no": 10,
     "zh": "玫瑰粉镂空长裙",
     "en": "Rose Lace Dress",
     "catZh": "连衣裙 · 马海毛混纺",
@@ -260,7 +202,7 @@
   },
   {
     "id": "emerald-crewneck",
-    "no": 14,
+    "no": 11,
     "zh": "祖母绿圆领衫",
     "en": "Emerald Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -281,7 +223,7 @@
   },
   {
     "id": "mushroom-open-knit",
-    "no": 15,
+    "no": 12,
     "zh": "蘑菇棕镂空针织衫",
     "en": "Mushroom Open-Knit Sweater",
     "catZh": "毛衣 · 马海毛混纺",
@@ -301,7 +243,7 @@
   },
   {
     "id": "periwinkle-open-knit",
-    "no": 16,
+    "no": 13,
     "zh": "长春花蓝镂空针织衫",
     "en": "Periwinkle Open-Knit Sweater",
     "catZh": "毛衣 · 马海毛混纺",
@@ -321,7 +263,7 @@
   },
   {
     "id": "oat-cable-trim-crewneck",
-    "no": 17,
+    "no": 14,
     "zh": "暖驼色绞花滚边圆领衫",
     "en": "Oat Cable-Trim Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
