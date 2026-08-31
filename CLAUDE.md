@@ -20,7 +20,7 @@ Static site, **no build step, no framework, no package.json**. Deployed on Verce
 - `js/main.js` `loadAndRenderProducts()` fetches `data/products.json` client-side and renders the product ledger (`#productLedger` in `index.html`) via `renderLedger()`.
 - `api/create-checkout-session.js` (Node, CommonJS) `require()`s the same JSON file server-side to validate the product id, price, and `sold` status before creating a Stripe Checkout Session.
 
-To add/edit/retire a piece, edit `data/products.json` only — do not hardcode product data in JS or HTML. Each entry: `id` (slug, must match between frontend and any Stripe metadata), `no` (catalogue number), `zh`/`en` name, `catZh`/`catEn`, `descZh`/`descEn`, `colourNameZh`/`colourNameEn`, `swatch` (hex sampled from the actual piece), `images: { hanger, flat, texture }` (each `""` shows a placeholder frame until a real photo path is filled in), `priceAUD` (in **cents**), `sold` (bool — hides the buy action and blocks checkout server-side).
+To add/edit/retire a piece, edit `data/products.json` only — do not hardcode product data in JS or HTML. Each entry: `id` (slug, must match between frontend and any Stripe metadata), `no` (catalogue number shown on the page as `N° 001`), `displayOrder` (int — the ledger's sort position, independent of `no`), `zh`/`en` name, `catZh`/`catEn`, `descZh`/`descEn`, `colourNameZh`/`colourNameEn`, `swatch` (hex sampled from the actual piece), `images: { hanger, flat, texture }` (each `""` shows a placeholder frame until a real photo path is filled in), `priceAUD` (in **cents**), `sold` (bool — hides the buy action and blocks checkout server-side).
 
 ### Checkout flow
 

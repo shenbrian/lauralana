@@ -18,7 +18,8 @@
 
    Each entry:
      id            unique slug, e.g. "oat-crewneck"
-     no            sequential catalogue number (integer)
+     no            catalogue number shown on the page (integer, e.g. N° 018)
+     displayOrder  sort position in the ledger (integer) — independent of "no"
      zh / en       piece name
      catZh / catEn category + material line
      descZh / descEn   short description
@@ -201,7 +202,7 @@ function renderLedger(){
     return;
   }
 
-  PRODUCTS.sort((a, b) => a.no - b.no);
+  PRODUCTS.sort((a, b) => a.displayOrder - b.displayOrder);
 
   ledger.innerHTML = PRODUCTS.map(p => {
     const hasPrice = typeof p.priceAUD === 'number' && p.priceAUD > 0;
