@@ -471,11 +471,6 @@ html[data-lang="zh"] .ledger-acquire{ letter-spacing:.03em; text-transform:none;
 }
 .ledger-enquire:hover{ color: var(--accent); border-color: var(--accent); }
 
-.ledger-item[data-sold="true"] .ledger-photo img,
-.ledger-item[data-sold="true"] .ledger-botanical-svg{
-  filter: grayscale(.55) opacity(.82);
-}
-
 .ledger-empty{
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
   padding: 72px 0; text-align:center;
