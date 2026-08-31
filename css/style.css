@@ -407,7 +407,7 @@ html[data-lang="zh"] .statement-attribution{ letter-spacing:.04em; text-transfor
   display:flex; align-items:center; justify-content:center;
   aspect-ratio: 4/5;
 }
-.ledger-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+.ledger-photo img{ width:100%; height:100%; object-fit:contain; display:block; }
 .ledger-photo .placeholder-icon{ width:32px; height:32px; opacity:.28; color: var(--ink); }
 .ledger-photo-label{
   position:absolute; left:8px; bottom:8px;
