@@ -164,7 +164,7 @@
       "hanger": "images/sage-cable-crewneck-hanger.jpg",
       "flat": "images/sage-cable-crewneck-flat.jpg"
     },
-    "priceAUD": 89000,
+    "priceAUD": 88000,
     "sold": false,
     "img": "images/sage-cable-crewneck-hanger.jpg"
   },
@@ -206,7 +206,7 @@
       "hanger": "images/rose-lace-dress-hanger.jpg",
       "flat": "images/rose-lace-dress-flat.jpg"
     },
-    "priceAUD": 98000,
+    "priceAUD": 90000,
     "sold": false,
     "img": "images/rose-lace-dress-hanger.jpg"
   },
@@ -470,7 +470,7 @@
     "images": {
       "hanger": "images/olive-yoke-crewneck-hanger.jpg"
     },
-    "priceAUD": 88000,
+    "priceAUD": 80000,
     "sold": true,
     "img": "images/olive-yoke-crewneck-hanger.jpg"
   },
@@ -490,7 +490,7 @@
     "images": {
       "hanger": "images/stone-marl-dress-hanger.jpg"
     },
-    "priceAUD": 140000,
+    "priceAUD": 110000,
     "sold": true,
     "img": "images/stone-marl-dress-hanger.jpg"
   },
@@ -530,7 +530,7 @@
     "images": {
       "hanger": "images/dusty-rose-cable-dress-hanger.jpg"
     },
-    "priceAUD": 120000,
+    "priceAUD": 110000,
     "sold": true,
     "img": "images/dusty-rose-cable-dress-hanger.jpg"
   },
@@ -570,7 +570,7 @@
     "images": {
       "hanger": "images/cornflower-knit-set-hanger.jpg"
     },
-    "priceAUD": 85000,
+    "priceAUD": 80000,
     "sold": true,
     "img": "images/cornflower-knit-set-hanger.jpg"
   }
