@@ -279,5 +279,271 @@
     "priceAUD": 59000,
     "sold": false,
     "img": "images/oat-cable-trim-crewneck-hanger.jpg"
+  },
+  {
+    "id": "indigo-brown-marl-funnelneck",
+    "no": 15,
+    "zh": "靛蓝混色高领衫",
+    "en": "Indigo Marl Funnel-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款高领，落肩廓形，宽喇叭袖，靛蓝、藏蓝与暖棕交织的空间染段染，横向晕色由纱线本身呈现。",
+    "descEn": "A cropped funnel-neck with a dropped shoulder and wide bell sleeves, hand-knit in a space-dyed marl of indigo, navy and warm bracken brown — horizontal drifts of colour straight from the yarn.",
+    "colourNameZh": "靛蓝混色",
+    "colourNameEn": "Indigo Marl",
+    "swatch": "#4B4854",
+    "images": {
+      "hanger": "images/indigo-brown-marl-funnelneck-hanger.jpg"
+    },
+    "priceAUD": 47000,
+    "sold": true,
+    "img": "images/indigo-brown-marl-funnelneck-hanger.jpg"
+  },
+  {
+    "id": "ivory-cloud-open-knit",
+    "no": 16,
+    "zh": "象牙白云朵镂空衫",
+    "en": "Ivory Cloud Open-Knit",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，通身稀疏半透的镂空针法，宽喇叭袖，柔和的象牙白，轻盈近乎无重量。",
+    "descEn": "A cropped boat-neck knit in an airy, semi-sheer open gauge, with wide flared sleeves, in a soft ivory that reads almost weightless.",
+    "colourNameZh": "象牙白",
+    "colourNameEn": "Ivory",
+    "swatch": "#CFC9BD",
+    "images": {
+      "hanger": "images/ivory-cloud-open-knit-hanger.jpg"
+    },
+    "priceAUD": 43000,
+    "sold": true,
+    "img": "images/ivory-cloud-open-knit-hanger.jpg"
+  },
+  {
+    "id": "oatmeal-cloud-open-knit",
+    "no": 17,
+    "zh": "燕麦色云朵镂空衫",
+    "en": "Oatmeal Cloud Open-Knit",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，通身稀疏半透的镂空针法，宽喇叭袖，温润带灰调的燕麦色。",
+    "descEn": "A cropped boat-neck knit in an airy, semi-sheer open gauge, with wide flared sleeves, in a warm, greige-toned oatmeal.",
+    "colourNameZh": "燕麦色",
+    "colourNameEn": "Oatmeal",
+    "swatch": "#BFB3A2",
+    "images": {
+      "hanger": "images/oatmeal-cloud-open-knit-hanger.jpg"
+    },
+    "priceAUD": 45000,
+    "sold": true,
+    "img": "images/oatmeal-cloud-open-knit-hanger.jpg"
+  },
+  {
+    "id": "pale-grey-cloud-open-knit",
+    "no": 18,
+    "zh": "浅灰云朵镂空衫",
+    "en": "Pale Grey Cloud Open-Knit",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，通身稀疏半透的镂空针法，宽喇叭袖，冷调均匀的浅灰色。",
+    "descEn": "A cropped boat-neck knit in an airy, semi-sheer open gauge, with wide flared sleeves, in a cool, even pale grey.",
+    "colourNameZh": "浅灰",
+    "colourNameEn": "Pale Grey",
+    "swatch": "#BBBAB4",
+    "images": {
+      "hanger": "images/pale-grey-cloud-open-knit-hanger.jpg"
+    },
+    "priceAUD": 43000,
+    "sold": true,
+    "img": "images/pale-grey-cloud-open-knit-hanger.jpg"
+  },
+  {
+    "id": "mushroom-marl-boatneck",
+    "no": 19,
+    "zh": "蘑菇棕混色一字领衫",
+    "en": "Mushroom Marl Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，落肩廓形，喇叭袖口，细密平针，斑驳交织的蘑菇棕。",
+    "descEn": "A cropped boat-neck with a dropped shoulder and fluted bell cuffs, hand-knit in a fine, close gauge, in a heathered mushroom taupe.",
+    "colourNameZh": "蘑菇棕",
+    "colourNameEn": "Mushroom Marl",
+    "swatch": "#766D6C",
+    "images": {
+      "hanger": "images/mushroom-marl-boatneck-hanger.jpg"
+    },
+    "priceAUD": 98000,
+    "sold": true,
+    "img": "images/mushroom-marl-boatneck-hanger.jpg"
+  },
+  {
+    "id": "wheat-cable-boatneck",
+    "no": 20,
+    "zh": "麦色绞花一字领衫",
+    "en": "Wheat Cable Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，饱满灯笼袖，通身松散通透的绞花格纹，温暖的日晒麦色。",
+    "descEn": "A cropped boat-neck with full balloon sleeves, knit throughout in a loose, open cable lattice, in a warm, sun-bleached wheat.",
+    "colourNameZh": "麦色",
+    "colourNameEn": "Wheat",
+    "swatch": "#8C7865",
+    "images": {
+      "hanger": "images/wheat-cable-boatneck-hanger.jpg"
+    },
+    "priceAUD": 58000,
+    "sold": true,
+    "img": "images/wheat-cable-boatneck-hanger.jpg"
+  },
+  {
+    "id": "grey-blue-marl-boatneck",
+    "no": 21,
+    "zh": "灰蓝混色一字领衫",
+    "en": "Grey-Blue Marl Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，落肩廓形，宽喇叭袖，细密平针，柔和的灰色中透出冷调蓝。",
+    "descEn": "A cropped boat-neck with a dropped shoulder and wide bell sleeves, hand-knit in a fine gauge, in a soft grey marled through with cool blue.",
+    "colourNameZh": "灰蓝混色",
+    "colourNameEn": "Grey-Blue Marl",
+    "swatch": "#797C7F",
+    "images": {
+      "hanger": "images/grey-blue-marl-boatneck-hanger.jpg"
+    },
+    "priceAUD": 98000,
+    "sold": true,
+    "img": "images/grey-blue-marl-boatneck-hanger.jpg"
+  },
+  {
+    "id": "denim-marl-crewneck",
+    "no": 22,
+    "zh": "牛仔蓝混色圆领衫",
+    "en": "Denim Marl Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩圆领，宽罗纹育克，宽喇叭袖，牛仔蓝与灰双色交织的段染。",
+    "descEn": "A dropped-shoulder crewneck with a deep ribbed yoke and wide bell sleeves, hand-knit in a two-tone marl of denim blue and grey.",
+    "colourNameZh": "牛仔蓝混色",
+    "colourNameEn": "Denim Marl",
+    "swatch": "#567A94",
+    "images": {
+      "hanger": "images/denim-marl-crewneck-hanger.jpg"
+    },
+    "priceAUD": 110000,
+    "sold": true,
+    "img": "images/denim-marl-crewneck-hanger.jpg"
+  },
+  {
+    "id": "olive-yoke-crewneck",
+    "no": 23,
+    "zh": "橄榄绿育克圆领衫",
+    "en": "Olive Yoke Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "落肩圆领，宽罗纹育克，宽喇叭袖，柔和沉静的灰橄榄绿。",
+    "descEn": "A dropped-shoulder crewneck with a deep ribbed yoke and wide bell sleeves, in a soft, dusty olive green.",
+    "colourNameZh": "灰橄榄绿",
+    "colourNameEn": "Dusty Olive",
+    "swatch": "#7D8159",
+    "images": {
+      "hanger": "images/olive-yoke-crewneck-hanger.jpg"
+    },
+    "priceAUD": 88000,
+    "sold": true,
+    "img": "images/olive-yoke-crewneck-hanger.jpg"
+  },
+  {
+    "id": "stone-marl-dress",
+    "no": 24,
+    "zh": "灰石色混色长裙",
+    "en": "Stone Marl Dress",
+    "catZh": "连衣裙 · 马海毛混纺",
+    "catEn": "Dress · Mohair Blend",
+    "descZh": "一字领直筒长裙，长及小腿，七分喇叭袖，斑驳交织的灰石色段染。",
+    "descEn": "A boat-neck column dress falling to mid-calf, with three-quarter bell sleeves, hand-knit in a heathered stone-grey marl.",
+    "colourNameZh": "灰石色",
+    "colourNameEn": "Stone Marl",
+    "swatch": "#7E7164",
+    "images": {
+      "hanger": "images/stone-marl-dress-hanger.jpg"
+    },
+    "priceAUD": 140000,
+    "sold": true,
+    "img": "images/stone-marl-dress-hanger.jpg"
+  },
+  {
+    "id": "burgundy-colourblock-dress",
+    "no": 25,
+    "zh": "酒红撞色长裙",
+    "en": "Burgundy Colour-Block Dress",
+    "catZh": "连衣裙 · 马海毛混纺",
+    "catEn": "Dress · Mohair Blend",
+    "descZh": "一字领及地长裙，磨毛晕光马海毛，浓郁酒红的裙身搭配撞色冰川蓝的宽袖。",
+    "descEn": "A floor-length boat-neck dress in a brushed, hazy mohair, the deep burgundy body set against full sleeves in contrasting glacier blue.",
+    "colourNameZh": "酒红",
+    "colourNameEn": "Burgundy",
+    "swatch": "#833637",
+    "images": {
+      "hanger": "images/burgundy-colourblock-dress-hanger.jpg"
+    },
+    "priceAUD": 68000,
+    "sold": true,
+    "img": "images/burgundy-colourblock-dress-hanger.jpg"
+  },
+  {
+    "id": "dusty-rose-cable-dress",
+    "no": 26,
+    "zh": "雾玫瑰绞花长裙",
+    "en": "Dusty Rose Cable Dress",
+    "catZh": "连衣裙 · 马海毛混纺",
+    "catEn": "Dress · Mohair Blend",
+    "descZh": "一字领及地长裙，通身菱形绞花格纹，柔和的雾玫瑰粉调入米灰。",
+    "descEn": "A floor-length boat-neck dress knit throughout in a diamond cable lattice, in a soft dusty rose warmed with beige-grey.",
+    "colourNameZh": "雾玫瑰",
+    "colourNameEn": "Dusty Rose",
+    "swatch": "#9E8079",
+    "images": {
+      "hanger": "images/dusty-rose-cable-dress-hanger.jpg"
+    },
+    "priceAUD": 120000,
+    "sold": true,
+    "img": "images/dusty-rose-cable-dress-hanger.jpg"
+  },
+  {
+    "id": "charcoal-knit-set",
+    "no": 27,
+    "zh": "炭灰针织两件套",
+    "en": "Charcoal Knit Set",
+    "catZh": "套装 · 马海毛混纺",
+    "catEn": "Set · Mohair Blend",
+    "descZh": "两件套：短款一字领上衣，落肩灯笼袖；搭配同色绞花中长半裙，罗纹腰头。整套以斑驳炭灰马海毛手工编织。",
+    "descEn": "A two-piece set — a cropped boat-neck top with dropped shoulders and full balloon sleeves, worn with a matching cable-knit midi skirt on a ribbed waistband. Hand-knit throughout in a heathered charcoal mohair.",
+    "colourNameZh": "炭灰",
+    "colourNameEn": "Charcoal",
+    "swatch": "#616061",
+    "images": {
+      "hanger": "images/charcoal-knit-set-hanger.jpg"
+    },
+    "priceAUD": 88000,
+    "sold": true,
+    "img": "images/charcoal-knit-set-hanger.jpg"
+  },
+  {
+    "id": "cornflower-knit-set",
+    "no": 28,
+    "zh": "矢车菊蓝针织两件套",
+    "en": "Cornflower Knit Set",
+    "catZh": "套装 · 马海毛混纺",
+    "catEn": "Set · Mohair Blend",
+    "descZh": "两件套：短款一字领上衣，落肩灯笼袖；搭配同色绞花中长半裙，罗纹腰头。整套以清透的矢车菊蓝马海毛手工编织。",
+    "descEn": "A two-piece set — a cropped boat-neck top with dropped shoulders and full balloon sleeves, worn with a matching cable-knit midi skirt on a ribbed waistband. Hand-knit throughout in a clear cornflower blue mohair.",
+    "colourNameZh": "矢车菊蓝",
+    "colourNameEn": "Cornflower",
+    "swatch": "#5E7290",
+    "images": {
+      "hanger": "images/cornflower-knit-set-hanger.jpg"
+    },
+    "priceAUD": 85000,
+    "sold": true,
+    "img": "images/cornflower-knit-set-hanger.jpg"
   }
 ]
