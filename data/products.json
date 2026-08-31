@@ -43,7 +43,7 @@
   {
     "id": "indigo-marl-crewneck",
     "no": 3,
-    "displayOrder": 3,
+    "displayOrder": 5,
     "zh": "靛蓝混色圆领衫",
     "en": "Indigo Marl Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -65,7 +65,7 @@
   {
     "id": "dusty-mauve-crewneck",
     "no": 4,
-    "displayOrder": 4,
+    "displayOrder": 6,
     "zh": "雾霾玫瑰圆领衫",
     "en": "Dusty Mauve Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -86,7 +86,7 @@
   {
     "id": "lavender-crewneck",
     "no": 5,
-    "displayOrder": 5,
+    "displayOrder": 7,
     "zh": "薰衣草紫圆领衫",
     "en": "Lavender Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -108,7 +108,7 @@
   {
     "id": "lilac-crewneck",
     "no": 6,
-    "displayOrder": 6,
+    "displayOrder": 8,
     "zh": "浅丁香紫圆领衫",
     "en": "Lilac Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -129,7 +129,7 @@
   {
     "id": "oat-lace-crewneck",
     "no": 7,
-    "displayOrder": 7,
+    "displayOrder": 10,
     "zh": "燕麦色镂空圆领衫",
     "en": "Oat Lace Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -150,7 +150,7 @@
   {
     "id": "sage-cable-crewneck",
     "no": 8,
-    "displayOrder": 8,
+    "displayOrder": 11,
     "zh": "鼠尾草绿麻花圆领衫",
     "en": "Sage Cable Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -171,7 +171,7 @@
   {
     "id": "teal-crewneck",
     "no": 9,
-    "displayOrder": 9,
+    "displayOrder": 13,
     "zh": "青蓝圆领衫",
     "en": "Teal Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -192,7 +192,7 @@
   {
     "id": "rose-lace-dress",
     "no": 10,
-    "displayOrder": 10,
+    "displayOrder": 15,
     "zh": "玫瑰粉镂空长裙",
     "en": "Rose Lace Dress",
     "catZh": "连衣裙 · 马海毛混纺",
@@ -213,7 +213,7 @@
   {
     "id": "emerald-crewneck",
     "no": 11,
-    "displayOrder": 11,
+    "displayOrder": 16,
     "zh": "祖母绿圆领衫",
     "en": "Emerald Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -235,7 +235,7 @@
   {
     "id": "mushroom-open-knit",
     "no": 12,
-    "displayOrder": 12,
+    "displayOrder": 17,
     "zh": "蘑菇棕镂空针织衫",
     "en": "Mushroom Open-Knit Sweater",
     "catZh": "毛衣 · 马海毛混纺",
@@ -256,7 +256,7 @@
   {
     "id": "periwinkle-open-knit",
     "no": 13,
-    "displayOrder": 13,
+    "displayOrder": 18,
     "zh": "长春花蓝镂空针织衫",
     "en": "Periwinkle Open-Knit Sweater",
     "catZh": "毛衣 · 马海毛混纺",
@@ -277,7 +277,7 @@
   {
     "id": "oat-cable-trim-crewneck",
     "no": 14,
-    "displayOrder": 14,
+    "displayOrder": 19,
     "zh": "暖驼色绞花滚边圆领衫",
     "en": "Oat Cable-Trim Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -297,7 +297,7 @@
   {
     "id": "indigo-brown-marl-funnelneck",
     "no": 15,
-    "displayOrder": 15,
+    "displayOrder": 20,
     "zh": "靛蓝混色高领衫",
     "en": "Indigo Marl Funnel-Neck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -317,7 +317,7 @@
   {
     "id": "ivory-cloud-open-knit",
     "no": 16,
-    "displayOrder": 16,
+    "displayOrder": 21,
     "zh": "象牙白云朵镂空衫",
     "en": "Ivory Cloud Open-Knit",
     "catZh": "毛衣 · 马海毛混纺",
@@ -337,7 +337,7 @@
   {
     "id": "oatmeal-cloud-open-knit",
     "no": 17,
-    "displayOrder": 17,
+    "displayOrder": 22,
     "zh": "燕麦色云朵镂空衫",
     "en": "Oatmeal Cloud Open-Knit",
     "catZh": "毛衣 · 马海毛混纺",
@@ -357,7 +357,7 @@
   {
     "id": "pale-grey-cloud-open-knit",
     "no": 18,
-    "displayOrder": 18,
+    "displayOrder": 23,
     "zh": "浅灰云朵镂空衫",
     "en": "Pale Grey Cloud Open-Knit",
     "catZh": "毛衣 · 马海毛混纺",
@@ -377,7 +377,7 @@
   {
     "id": "mushroom-marl-boatneck",
     "no": 19,
-    "displayOrder": 19,
+    "displayOrder": 3,
     "zh": "蘑菇棕混色一字领衫",
     "en": "Mushroom Marl Boat-Neck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -397,7 +397,7 @@
   {
     "id": "wheat-cable-boatneck",
     "no": 20,
-    "displayOrder": 20,
+    "displayOrder": 24,
     "zh": "麦色绞花一字领衫",
     "en": "Wheat Cable Boat-Neck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -417,7 +417,7 @@
   {
     "id": "grey-blue-marl-boatneck",
     "no": 21,
-    "displayOrder": 21,
+    "displayOrder": 25,
     "zh": "灰蓝混色一字领衫",
     "en": "Grey-Blue Marl Boat-Neck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -437,7 +437,7 @@
   {
     "id": "denim-marl-crewneck",
     "no": 22,
-    "displayOrder": 22,
+    "displayOrder": 4,
     "zh": "牛仔蓝混色圆领衫",
     "en": "Denim Marl Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -457,7 +457,7 @@
   {
     "id": "olive-yoke-crewneck",
     "no": 23,
-    "displayOrder": 23,
+    "displayOrder": 26,
     "zh": "橄榄绿育克圆领衫",
     "en": "Olive Yoke Crewneck",
     "catZh": "毛衣 · 马海毛混纺",
@@ -477,7 +477,7 @@
   {
     "id": "stone-marl-dress",
     "no": 24,
-    "displayOrder": 24,
+    "displayOrder": 12,
     "zh": "灰石色混色长裙",
     "en": "Stone Marl Dress",
     "catZh": "连衣裙 · 马海毛混纺",
@@ -497,7 +497,7 @@
   {
     "id": "burgundy-colourblock-dress",
     "no": 25,
-    "displayOrder": 25,
+    "displayOrder": 27,
     "zh": "酒红撞色长裙",
     "en": "Burgundy Colour-Block Dress",
     "catZh": "连衣裙 · 马海毛混纺",
@@ -517,7 +517,7 @@
   {
     "id": "dusty-rose-cable-dress",
     "no": 26,
-    "displayOrder": 26,
+    "displayOrder": 9,
     "zh": "雾玫瑰绞花长裙",
     "en": "Dusty Rose Cable Dress",
     "catZh": "连衣裙 · 马海毛混纺",
@@ -537,7 +537,7 @@
   {
     "id": "charcoal-knit-set",
     "no": 27,
-    "displayOrder": 27,
+    "displayOrder": 14,
     "zh": "炭灰针织两件套",
     "en": "Charcoal Knit Set",
     "catZh": "套装 · 马海毛混纺",
