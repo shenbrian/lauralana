@@ -34,7 +34,7 @@
 1. 编目行：`N° 001` + 价格
 2. **左右等宽双框**：左框商品照片（`p.img`），右框**参数化生成的植物学插画**（`botanicalMark()`），花头颜色取该商品 swatch，茎叶固定鼠尾草绿，底部标签显示颜色名（如 "FUCHSIA"）
    - 插画基于商品 id 做**确定性随机化**（`seedFromId()` + `mulberry32()` PRNG）：花苞角度、叶片形态、花瓣旋转起始角、水彩纹理噪点，17 件各不相同但同一件每次刷新构图一致
-3. 信息区：分类、名称、描述、操作区（未售出："购藏此作"文字链接走 Stripe；已售出："已被珍藏 / Now with its owner"，图片+插画同步做灰度处理）
+3. 信息区：分类、名称、描述、操作区（未售出："购藏此作"文字链接走 Stripe；已售出："已被珍藏 / Cherished by a collector"，图片+插画同步做灰度处理）
 
 **数据结构**（`data/products.json`，唯一数据源）：每条含 `id, no, zh/en, catZh/catEn, descZh/descEn, colourNameZh/En, swatch, img, priceAUD, sold`（`images.hanger/flat/texture` 字段仍保留但当前版式未使用）
 

@@ -218,7 +218,7 @@ function renderLedger(){
       </div>`;
 
     const actionBlock = p.sold
-      ? `<span class="ledger-archived i18n" data-zh="已被珍藏" data-en="Now with its owner"></span>`
+      ? `<span class="ledger-archived i18n" data-zh="已被珍藏" data-en="Cherished by a collector"></span>`
       : hasPrice
         ? `<button type="button" class="ledger-acquire" data-product-id="${p.id}">
              <span class="i18n" data-zh="购藏此作" data-en="Acquire This Piece"></span>
