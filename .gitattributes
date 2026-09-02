@@ -1,0 +1,18 @@
+# Line endings: normalise text in the repo, let Windows check out CRLF.
+* text=auto
+
+# Binary assets — never apply line-ending conversion (it corrupts them).
+# Git's auto-detection mis-read the print PDFs as text, so be explicit.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+
+# Source files are text.
+*.html text
+*.css  text
+*.js   text
+*.json text
+*.md   text
+*.svg  text
