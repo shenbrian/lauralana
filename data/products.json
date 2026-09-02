@@ -15,7 +15,7 @@
     "images": {
       "hanger": "images/fuchsia-crewneck-hanger.jpg"
     },
-    "priceAUD": 58000,
+    "priceAUD": 68000,
     "sold": false,
     "img": "images/fuchsia-crewneck-hanger.jpg"
   },
@@ -36,7 +36,7 @@
       "hanger": "images/olive-crewneck-hanger.jpg",
       "flat": "images/olive-crewneck-flat.jpg"
     },
-    "priceAUD": 49000,
+    "priceAUD": 58000,
     "sold": false,
     "img": "images/olive-crewneck-hanger.jpg"
   },
@@ -58,7 +58,7 @@
       "flat": "images/indigo-marl-crewneck-flat.jpg",
       "texture": "images/indigo-marl-crewneck-texture.jpg"
     },
-    "priceAUD": 28000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/indigo-marl-crewneck-hanger.jpg"
   },
@@ -79,7 +79,7 @@
       "hanger": "images/dusty-mauve-crewneck-hanger.jpg",
       "flat": "images/dusty-mauve-crewneck-flat.jpg"
     },
-    "priceAUD": 89000,
+    "priceAUD": 90000,
     "sold": false,
     "img": "images/dusty-mauve-crewneck-hanger.jpg"
   },
@@ -101,51 +101,9 @@
       "flat": "images/lavender-crewneck-flat.jpg",
       "texture": "images/lavender-crewneck-texture.jpg"
     },
-    "priceAUD": 88000,
+    "priceAUD": 90000,
     "sold": false,
     "img": "images/lavender-crewneck-hanger.jpg"
-  },
-  {
-    "id": "lilac-crewneck",
-    "no": 6,
-    "displayOrder": 8,
-    "zh": "浅丁香紫圆领衫",
-    "en": "Lilac Crewneck",
-    "catZh": "毛衣 · 马海毛混纺",
-    "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，蓬松晕光质地，柔和均匀的浅丁香紫色。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, in a soft, hazy mohair halo of pale, even lilac.",
-    "colourNameZh": "浅丁香紫",
-    "colourNameEn": "Pale Lilac",
-    "swatch": "#C29AB4",
-    "images": {
-      "hanger": "images/lilac-crewneck-hanger.jpg",
-      "flat": "images/lilac-crewneck-flat.jpg"
-    },
-    "priceAUD": 29000,
-    "sold": false,
-    "img": "images/lilac-crewneck-hanger.jpg"
-  },
-  {
-    "id": "oat-lace-crewneck",
-    "no": 7,
-    "displayOrder": 10,
-    "zh": "燕麦色镂空圆领衫",
-    "en": "Oat Lace Crewneck",
-    "catZh": "毛衣 · 马海毛混纺",
-    "catEn": "Sweater · Mohair Blend",
-    "descZh": "落肩廓形，喇叭袖口，通身菱形镂空针法，温暖的燕麦香槟色。",
-    "descEn": "A dropped-shoulder crewneck with fluted bell cuffs, knit throughout in an open diamond lace stitch, in a warm, champagne-toned oat.",
-    "colourNameZh": "燕麦色",
-    "colourNameEn": "Oat",
-    "swatch": "#BA9C73",
-    "images": {
-      "hanger": "images/oat-lace-crewneck-hanger.jpg",
-      "flat": "images/oat-lace-crewneck-flat.jpg"
-    },
-    "priceAUD": 48000,
-    "sold": false,
-    "img": "images/oat-lace-crewneck-hanger.jpg"
   },
   {
     "id": "sage-cable-crewneck",
@@ -164,7 +122,7 @@
       "hanger": "images/sage-cable-crewneck-hanger.jpg",
       "flat": "images/sage-cable-crewneck-flat.jpg"
     },
-    "priceAUD": 88000,
+    "priceAUD": 90000,
     "sold": false,
     "img": "images/sage-cable-crewneck-hanger.jpg"
   },
@@ -185,7 +143,7 @@
       "hanger": "images/teal-crewneck-hanger.jpg",
       "flat": "images/teal-crewneck-flat.jpg"
     },
-    "priceAUD": 36000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/teal-crewneck-hanger.jpg"
   },
@@ -206,7 +164,7 @@
       "hanger": "images/rose-lace-dress-hanger.jpg",
       "flat": "images/rose-lace-dress-flat.jpg"
     },
-    "priceAUD": 90000,
+    "priceAUD": 98000,
     "sold": false,
     "img": "images/rose-lace-dress-hanger.jpg"
   },
@@ -228,7 +186,7 @@
       "flat": "images/emerald-crewneck-flat.jpg",
       "texture": "images/emerald-crewneck-texture.jpg"
     },
-    "priceAUD": 39000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/emerald-crewneck-hanger.jpg"
   },
@@ -249,7 +207,7 @@
       "hanger": "images/mushroom-open-knit-hanger.jpg",
       "flat": "images/mushroom-open-knit-flat.jpg"
     },
-    "priceAUD": 38000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/mushroom-open-knit-hanger.jpg"
   },
@@ -270,7 +228,7 @@
       "hanger": "images/periwinkle-open-knit-hanger.jpg",
       "flat": "images/periwinkle-open-knit-flat.jpg"
     },
-    "priceAUD": 38000,
+    "priceAUD": 48000,
     "sold": false,
     "img": "images/periwinkle-open-knit-hanger.jpg"
   },
@@ -290,7 +248,7 @@
     "images": {
       "hanger": "images/oat-cable-trim-crewneck-hanger.jpg"
     },
-    "priceAUD": 59000,
+    "priceAUD": 80000,
     "sold": false,
     "img": "images/oat-cable-trim-crewneck-hanger.jpg"
   },
@@ -310,7 +268,7 @@
     "images": {
       "hanger": "images/indigo-brown-marl-funnelneck-hanger.jpg"
     },
-    "priceAUD": 47000,
+    "priceAUD": 48000,
     "sold": true,
     "img": "images/indigo-brown-marl-funnelneck-hanger.jpg"
   },
@@ -330,7 +288,7 @@
     "images": {
       "hanger": "images/ivory-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 43000,
+    "priceAUD": 48000,
     "sold": true,
     "img": "images/ivory-cloud-open-knit-hanger.jpg"
   },
@@ -350,7 +308,7 @@
     "images": {
       "hanger": "images/oatmeal-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 45000,
+    "priceAUD": 48000,
     "sold": true,
     "img": "images/oatmeal-cloud-open-knit-hanger.jpg"
   },
@@ -370,7 +328,7 @@
     "images": {
       "hanger": "images/pale-grey-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 43000,
+    "priceAUD": 48000,
     "sold": true,
     "img": "images/pale-grey-cloud-open-knit-hanger.jpg"
   },
@@ -410,7 +368,7 @@
     "images": {
       "hanger": "images/wheat-cable-boatneck-hanger.jpg"
     },
-    "priceAUD": 58000,
+    "priceAUD": 80000,
     "sold": true,
     "img": "images/wheat-cable-boatneck-hanger.jpg"
   },
@@ -490,7 +448,7 @@
     "images": {
       "hanger": "images/stone-marl-dress-hanger.jpg"
     },
-    "priceAUD": 110000,
+    "priceAUD": 120000,
     "sold": true,
     "img": "images/stone-marl-dress-hanger.jpg"
   },
@@ -530,7 +488,7 @@
     "images": {
       "hanger": "images/dusty-rose-cable-dress-hanger.jpg"
     },
-    "priceAUD": 110000,
+    "priceAUD": 120000,
     "sold": true,
     "img": "images/dusty-rose-cable-dress-hanger.jpg"
   },
@@ -550,7 +508,7 @@
     "images": {
       "hanger": "images/charcoal-knit-set-hanger.jpg"
     },
-    "priceAUD": 88000,
+    "priceAUD": 98000,
     "sold": true,
     "img": "images/charcoal-knit-set-hanger.jpg"
   },
@@ -570,7 +528,7 @@
     "images": {
       "hanger": "images/cornflower-knit-set-hanger.jpg"
     },
-    "priceAUD": 80000,
+    "priceAUD": 98000,
     "sold": true,
     "img": "images/cornflower-knit-set-hanger.jpg"
   }
