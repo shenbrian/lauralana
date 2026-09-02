@@ -1,0 +1,30 @@
+# --- Secrets: never commit these ---------------------------------
+# Stripe keys live in Vercel env vars (STRIPE_SECRET_KEY), never in the repo.
+*keys*.txt
+*secret*
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# --- Local scratch / working files -------------------------------
+# Reference photos, phone dumps and AI-generated mockups that are not
+# site assets. Real product photography lives in images/*.jpg (tracked).
+*.jpeg
+image_002*/
+ChatGPT Image *
+
+# --- Tooling -----------------------------------------------------
+.vercel/
+node_modules/
+*.log
+
+# --- OS / editor cruft -------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
