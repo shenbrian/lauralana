@@ -531,5 +531,25 @@
     "priceAUD": 98000,
     "sold": true,
     "img": "images/cornflower-knit-set-hanger.jpg"
+  },
+  {
+    "id": "turquoise-cable-lace-boatneck",
+    "no": 29,
+    "displayOrder": 29,
+    "zh": "湖蓝绞花镂空一字领衫",
+    "en": "Turquoise Cable-Lace Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，落肩廓形，长罗纹袖，粗麻花绞纹与镂空蕾丝纹样交替排列，明亮通透的湖蓝色。",
+    "descEn": "A cropped boat-neck with a dropped shoulder and long ribbed sleeves, knit in alternating panels of rope cable and open lacework, in a bright, luminous turquoise.",
+    "colourNameZh": "湖蓝",
+    "colourNameEn": "Turquoise",
+    "swatch": "#4DA1BD",
+    "images": {
+      "hanger": "images/turquoise-cable-lace-boatneck-hanger.jpg"
+    },
+    "priceAUD": 59000,
+    "sold": false,
+    "img": "images/turquoise-cable-lace-boatneck-hanger.jpg"
   }
 ]
