@@ -551,5 +551,25 @@
     "priceAUD": 59000,
     "sold": false,
     "img": "images/turquoise-cable-lace-boatneck-hanger.jpg"
+  },
+  {
+    "id": "aquamarine-gossamer-bell-sleeve-crewneck",
+    "no": 30,
+    "displayOrder": 30,
+    "zh": "碧蓝蝉翼喇叭袖圆领衫",
+    "en": "Aquamarine Gossamer Bell-Sleeve Crewneck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "长身宽松廓形，圆领，育克处一道细镂空眼孔带，宽大喇叭袖，下摆与袖口为柔和扇贝波浪边；如蝉翼般轻薄通透，明亮的碧蓝色。",
+    "descEn": "A long, drifting crewneck knit at a barely-there gauge — as thin and translucent as a cicada's wing — with a fine eyelet band tracing the yoke, wide flared bell sleeves, and a softly scalloped hem, in a luminous aquamarine.",
+    "colourNameZh": "碧蓝",
+    "colourNameEn": "Aquamarine",
+    "swatch": "#488EA1",
+    "images": {
+      "hanger": "images/aquamarine-gossamer-bell-sleeve-crewneck-hanger.jpg"
+    },
+    "priceAUD": 69000,
+    "sold": false,
+    "img": "images/aquamarine-gossamer-bell-sleeve-crewneck-hanger.jpg"
   }
 ]
