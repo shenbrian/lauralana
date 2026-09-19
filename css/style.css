@@ -417,6 +417,18 @@ html[data-lang="zh"] .statement-attribution{ letter-spacing:.04em; text-transfor
 }
 html[data-lang="zh"] .ledger-photo-label{ letter-spacing:.04em; text-transform:none; }
 
+/* Archived-state corner mark — same register as .ledger-photo-label,
+   set opposite it (bottom-right) and outlined so it reads as a stamp. */
+.ledger-sold-badge{
+  position:absolute; right:8px; bottom:8px;
+  font-size:9px; letter-spacing:.12em; text-transform:uppercase;
+  color: var(--ink-faint);
+  background: rgba(247,244,238,.92);
+  border: 1px solid var(--line);
+  padding: 3px 7px;
+}
+html[data-lang="zh"] .ledger-sold-badge{ letter-spacing:.04em; text-transform:none; }
+
 .ledger-botanical{
   position:relative;
   overflow:hidden;

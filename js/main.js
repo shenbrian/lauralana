@@ -208,9 +208,15 @@ function renderLedger(){
     const hasPrice = typeof p.priceAUD === 'number' && p.priceAUD > 0;
     const botanical = botanicalMark(p.swatch || '#DDD6C6', undefined, seedFromId(p.id));
 
+    // Archived pieces carry a small corner mark on the photo itself, so the
+    // sold state reads at a glance instead of only from the action row below.
+    const soldBadge = p.sold
+      ? `<span class="ledger-sold-badge i18n" data-zh="已珍藏" data-en="Cherished"></span>`
+      : '';
+
     const photoBlock = p.img
-      ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy"></div>`
-      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="照片待补充" data-en="Photo coming soon"></span></div>`;
+      ? `<div class="ledger-photo"><img src="${p.img}" alt="${p.zh} / ${p.en}" loading="lazy">${soldBadge}</div>`
+      : `<div class="ledger-photo">${placeholderIcon}<span class="ledger-photo-label i18n" data-zh="照片待补充" data-en="Photo coming soon"></span>${soldBadge}</div>`;
 
     const botanicalBlock = `
       <div class="ledger-botanical">
