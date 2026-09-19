@@ -228,7 +228,7 @@
       "hanger": "images/periwinkle-open-knit-hanger.jpg",
       "flat": "images/periwinkle-open-knit-flat.jpg"
     },
-    "priceAUD": 48000,
+    "priceAUD": 58000,
     "sold": false,
     "img": "images/periwinkle-open-knit-hanger.jpg"
   },
@@ -288,7 +288,7 @@
     "images": {
       "hanger": "images/ivory-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 48000,
+    "priceAUD": 58000,
     "sold": true,
     "img": "images/ivory-cloud-open-knit-hanger.jpg"
   },
@@ -308,7 +308,7 @@
     "images": {
       "hanger": "images/oatmeal-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 48000,
+    "priceAUD": 58000,
     "sold": true,
     "img": "images/oatmeal-cloud-open-knit-hanger.jpg"
   },
@@ -328,7 +328,7 @@
     "images": {
       "hanger": "images/pale-grey-cloud-open-knit-hanger.jpg"
     },
-    "priceAUD": 48000,
+    "priceAUD": 58000,
     "sold": true,
     "img": "images/pale-grey-cloud-open-knit-hanger.jpg"
   },
@@ -368,7 +368,7 @@
     "images": {
       "hanger": "images/wheat-cable-boatneck-hanger.jpg"
     },
-    "priceAUD": 80000,
+    "priceAUD": 90000,
     "sold": true,
     "img": "images/wheat-cable-boatneck-hanger.jpg"
   },
@@ -428,7 +428,7 @@
     "images": {
       "hanger": "images/olive-yoke-crewneck-hanger.jpg"
     },
-    "priceAUD": 80000,
+    "priceAUD": 90000,
     "sold": true,
     "img": "images/olive-yoke-crewneck-hanger.jpg"
   },
@@ -448,7 +448,7 @@
     "images": {
       "hanger": "images/stone-marl-dress-hanger.jpg"
     },
-    "priceAUD": 120000,
+    "priceAUD": 140000,
     "sold": true,
     "img": "images/stone-marl-dress-hanger.jpg"
   },
