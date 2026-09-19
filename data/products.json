@@ -469,7 +469,7 @@
       "hanger": "images/burgundy-colourblock-dress-hanger.jpg"
     },
     "priceAUD": 68000,
-    "sold": true,
+    "sold": false,
     "img": "images/burgundy-colourblock-dress-hanger.jpg"
   },
   {
@@ -569,7 +569,7 @@
       "hanger": "images/aquamarine-gossamer-bell-sleeve-crewneck-hanger.jpg"
     },
     "priceAUD": 69000,
-    "sold": false,
+    "sold": true,
     "img": "images/aquamarine-gossamer-bell-sleeve-crewneck-hanger.jpg"
   },
   {
@@ -589,7 +589,7 @@
       "hanger": "images/hydrangea-gossamer-tunic-hanger.jpg"
     },
     "priceAUD": 69000,
-    "sold": false,
+    "sold": true,
     "img": "images/hydrangea-gossamer-tunic-hanger.jpg"
   },
   {
@@ -609,7 +609,7 @@
       "hanger": "images/cerulean-brushed-boatneck-hanger.jpg"
     },
     "priceAUD": 90000,
-    "sold": false,
+    "sold": true,
     "img": "images/cerulean-brushed-boatneck-hanger.jpg"
   },
   {
