@@ -571,5 +571,85 @@
     "priceAUD": 69000,
     "sold": false,
     "img": "images/aquamarine-gossamer-bell-sleeve-crewneck-hanger.jpg"
+  },
+  {
+    "id": "hydrangea-gossamer-tunic",
+    "no": 31,
+    "displayOrder": 31,
+    "zh": "绣球蓝蝉翼喇叭袖长衫",
+    "en": "Hydrangea Gossamer Bell-Sleeve Tunic",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "加长衫式廓形，圆领，极稀疏的镂空针法，育克处一道粗眼孔网纹，宽大喇叭袖，下摆呈柔和波浪；雾感的绣球蓝。",
+    "descEn": "An elongated, tunic-length crewneck knit at a barely-there open gauge, with a band of coarse eyelet mesh tracing the yoke, wide flared bell sleeves and a softly rippling hem, in a hazy, greyed hydrangea blue.",
+    "colourNameZh": "绣球蓝",
+    "colourNameEn": "Hydrangea",
+    "swatch": "#7A93B7",
+    "images": {
+      "hanger": "images/hydrangea-gossamer-tunic-hanger.jpg"
+    },
+    "priceAUD": 69000,
+    "sold": false,
+    "img": "images/hydrangea-gossamer-tunic-hanger.jpg"
+  },
+  {
+    "id": "cerulean-brushed-boatneck",
+    "no": 32,
+    "displayOrder": 32,
+    "zh": "蔚蓝磨毛喇叭袖一字领衫",
+    "en": "Cerulean Brushed Bell-Sleeve Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，领口宽阔可露肩，长喇叭袖；密实磨毛马海毛，蓬松晕光质地，清澈而带雾感的蔚蓝色。",
+    "descEn": "A cropped boat-neck with a wide, off-the-shoulder opening and long flared bell sleeves, hand-knit in a dense brushed mohair that holds a soft halo, in a clear, chalky cerulean.",
+    "colourNameZh": "蔚蓝",
+    "colourNameEn": "Cerulean",
+    "swatch": "#6491B3",
+    "images": {
+      "hanger": "images/cerulean-brushed-boatneck-hanger.jpg"
+    },
+    "priceAUD": 90000,
+    "sold": false,
+    "img": "images/cerulean-brushed-boatneck-hanger.jpg"
+  },
+  {
+    "id": "hydrangea-gossamer-cropped-boatneck",
+    "no": 33,
+    "displayOrder": 33,
+    "zh": "绣球蓝蝉翼短款一字领衫",
+    "en": "Hydrangea Gossamer Cropped Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，极稀疏的镂空针法，育克处一道眼孔网纹，宽大喇叭袖，下摆为细小扇贝边；雾感的绣球蓝。",
+    "descEn": "A cropped boat-neck knit at a barely-there open gauge, with an eyelet mesh band across the yoke, wide flared bell sleeves and a fine picot-edged hem, in a hazy, greyed hydrangea blue.",
+    "colourNameZh": "绣球蓝",
+    "colourNameEn": "Hydrangea",
+    "swatch": "#8192AC",
+    "images": {
+      "hanger": "images/hydrangea-gossamer-cropped-boatneck-hanger.jpg"
+    },
+    "priceAUD": 58000,
+    "sold": false,
+    "img": "images/hydrangea-gossamer-cropped-boatneck-hanger.jpg"
+  },
+  {
+    "id": "moss-bell-sleeve-boatneck",
+    "no": 34,
+    "displayOrder": 34,
+    "zh": "苔绿喇叭袖一字领衫",
+    "en": "Moss Bell-Sleeve Boat-Neck",
+    "catZh": "毛衣 · 马海毛混纺",
+    "catEn": "Sweater · Mohair Blend",
+    "descZh": "短款一字领，领口宽阔，长喇叭袖，松散通透的针法，带黄调的清新苔绿。",
+    "descEn": "A cropped boat-neck with a wide neckline and long flared bell sleeves, knit in a loose, softly open gauge, in a fresh moss green cast through with yellow.",
+    "colourNameZh": "苔绿",
+    "colourNameEn": "Moss",
+    "swatch": "#8F8E68",
+    "images": {
+      "hanger": "images/moss-bell-sleeve-boatneck-hanger.jpg"
+    },
+    "priceAUD": 58000,
+    "sold": false,
+    "img": "images/moss-bell-sleeve-boatneck-hanger.jpg"
   }
 ]
