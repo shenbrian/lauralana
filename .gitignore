@@ -13,7 +13,9 @@
 # site assets. Real product photography lives in images/*.jpg (tracked).
 *.jpeg
 image_002*/
+image_003/
 ChatGPT Image *
+LAURA LANA FRONT PAGE IMAGE.png
 
 # --- Tooling -----------------------------------------------------
 .vercel/
