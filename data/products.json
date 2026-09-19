@@ -59,7 +59,7 @@
       "texture": "images/indigo-marl-crewneck-texture.jpg"
     },
     "priceAUD": 48000,
-    "sold": false,
+    "sold": true,
     "img": "images/indigo-marl-crewneck-hanger.jpg"
   },
   {
@@ -165,7 +165,7 @@
       "flat": "images/rose-lace-dress-flat.jpg"
     },
     "priceAUD": 98000,
-    "sold": false,
+    "sold": true,
     "img": "images/rose-lace-dress-hanger.jpg"
   },
   {
@@ -208,7 +208,7 @@
       "flat": "images/mushroom-open-knit-flat.jpg"
     },
     "priceAUD": 48000,
-    "sold": false,
+    "sold": true,
     "img": "images/mushroom-open-knit-hanger.jpg"
   },
   {
@@ -249,7 +249,7 @@
       "hanger": "images/oat-cable-trim-crewneck-hanger.jpg"
     },
     "priceAUD": 80000,
-    "sold": false,
+    "sold": true,
     "img": "images/oat-cable-trim-crewneck-hanger.jpg"
   },
   {
@@ -549,7 +549,7 @@
       "hanger": "images/turquoise-cable-lace-boatneck-hanger.jpg"
     },
     "priceAUD": 68000,
-    "sold": false,
+    "sold": true,
     "img": "images/turquoise-cable-lace-boatneck-hanger.jpg"
   },
   {
