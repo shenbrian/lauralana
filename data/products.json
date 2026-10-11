@@ -651,5 +651,25 @@
     "priceAUD": 58000,
     "sold": false,
     "img": "images/moss-bell-sleeve-boatneck-hanger.jpg"
+  },
+  {
+    "id": "driftwood-cable-dress",
+    "no": 35,
+    "displayOrder": 35,
+    "zh": "浮木灰绞花长裙",
+    "en": "Driftwood Cable Dress",
+    "catZh": "连衣裙 · 马海毛混纺",
+    "catEn": "Dress · Mohair Blend",
+    "descZh": "落肩圆领及地长裙，长喇叭袖口，通身斜纹绞花肌理，下摆不对称垂坠成戏剧性拖尾长摆，温润低调的浮木灰褐色。",
+    "descEn": "A floor-length, dropped-shoulder crewneck dress with long fluted bell cuffs, knit throughout in a bold diagonal cable lattice, the hem falling into a dramatic, asymmetric train that pools at the floor — all in a warm, muted driftwood taupe.",
+    "colourNameZh": "浮木灰",
+    "colourNameEn": "Driftwood",
+    "swatch": "#A49790",
+    "images": {
+      "hanger": "images/driftwood-cable-dress-hanger.jpg"
+    },
+    "priceAUD": 130000,
+    "sold": true,
+    "img": "images/driftwood-cable-dress-hanger.jpg"
   }
 ]
